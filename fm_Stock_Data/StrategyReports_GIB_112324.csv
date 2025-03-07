@@ -1,0 +1,35 @@
+Strategy report
+Symbol: GIB
+Work Time: 9/13/04 - 8/2/18
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;148.0;$6.72;9/13/04;;($22.20);148.0;
+2;keepbusy_cross(SELL);Sell to Close;-148.0;$6.55;9/14/04;($24.44);($24.44);0.0;
+3;keepbusy_cross(Buy);Buy to Open;88.0;$11.32;4/4/08;;($27.08);88.0;
+4;keepbusy_cross(SELL);Sell to Close;-88.0;$11.05;5/8/08;($23.73);($48.18);0.0;
+5;keepbusy_cross(Buy);Buy to Open;52.0;$19.15;1/23/12;;($60.14);52.0;
+6;keepbusy_cross(SELL);Sell to Close;-52.0;$21.02;4/24/12;$97.24;$49.06;0.0;
+7;keepbusy_cross(Buy);Buy to Open;43.0;$22.81;6/8/12;;$44.76;43.0;
+8;keepbusy_cross(SELL);Sell to Close;-43.0;$25.92;10/22/12;$133.72;$182.78;0.0;
+9;keepbusy_cross(Buy);Buy to Open;31.0;$31.32;5/3/13;;$175.34;31.0;
+10;keepbusy_cross(SELL);Sell to Close;-31.0;$29.17;6/24/13;($66.68);$116.10;0.0;
+11;keepbusy_cross(Buy);Buy to Open;29.0;$34.30;8/2/13;;$103.92;29.0;
+12;keepbusy_cross(SELL);Sell to Close;-29.0;$31.46;9/5/13;($82.31);$33.79;0.0;
+13;keepbusy_cross(Buy);Buy to Open;23.0;$42.56;1/29/16;;$41.61;23.0;
+14;keepbusy_cross(SELL);Sell to Close;-23.0;$40.77;2/9/16;($41.17);($7.38);0.0;
+15;keepbusy_cross(Buy);Buy to Open;20.0;$49.66;1/9/17;;($17.98);20.0;
+16;keepbusy_cross(SELL);Sell to Close;-20.0;$47.89;1/20/17;($35.38);($42.76);0.0;
+17;keepbusy_cross(Buy);Buy to Open;18.0;$52.79;10/13/17;;($33.58);18.0;
+18;keepbusy_cross(SELL);Sell to Close;-18.0;$51.74;11/9/17;($18.93);($61.68);0.0;
+19;keepbusy_cross(Buy);Buy to Open;18.0;$54.65;12/22/17;;($70.68);18.0;
+20;keepbusy_cross(SELL);Sell to Close;-18.0;$53.47;1/11/18;($21.22);($82.90);0.0;
+21;keepbusy_cross(Buy);Buy to Open;16.0;$60.82;5/11/18;;($90.42);16.0;
+22;keepbusy_cross(SELL);Sell to Close;-16.0;$62.67;8/2/18;$29.57;($53.34);0.0;
+
+
+Max trade P/L: $133.72;
+
+Total P/L: ($53.34);
+
+Total order(s): 11;

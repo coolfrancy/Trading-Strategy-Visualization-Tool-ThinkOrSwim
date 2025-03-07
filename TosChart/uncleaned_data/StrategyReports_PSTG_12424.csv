@@ -1,0 +1,23 @@
+Strategy report
+Symbol: PSTG
+Work Time: 1/26/18 - 12/1/22
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;51.0;$19.55;1/26/18;;$18.36;51.0;
+2;keepbusy_cross(SELL);Sell to Close;-51.0;$19.45;3/26/18;($5.13);($5.13);0.0;
+3;keepbusy_cross(Buy);Buy to Open;37.0;$26.82;8/31/18;;($4.39);37.0;
+4;keepbusy_cross(SELL);Sell to Close;-37.0;$25.00;10/8/18;($67.27);($72.39);0.0;
+5;keepbusy_cross(Buy);Buy to Open;54.0;$18.47;1/10/20;;($56.19);54.0;
+6;keepbusy_cross(SELL);Sell to Close;-54.0;$17.81;2/3/20;($35.43);($107.83);0.0;
+7;keepbusy_cross(Buy);Buy to Open;48.0;$20.73;8/6/21;;($137.59);48.0;
+8;keepbusy_cross(SELL);Sell to Close;-48.0;$19.79;8/10/21;($44.98);($152.81);0.0;
+9;keepbusy_cross(Buy);Buy to Open;33.0;$29.83;10/28/22;;($130.70);33.0;
+10;keepbusy_cross(SELL);Sell to Close;-33.0;$28.91;12/1/22;($30.52);($183.32);0.0;
+
+
+Max trade P/L: ($5.13);
+
+Total P/L: ($183.32);
+
+Total order(s): 5;

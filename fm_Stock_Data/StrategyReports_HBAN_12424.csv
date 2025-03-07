@@ -1,0 +1,33 @@
+Strategy report
+Symbol: HBAN
+Work Time: 3/20/92 - 9/12/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;94.0;$10.62;3/20/92;;$23.35;94.0;
+2;keepbusy_cross(SELL);Sell to Close;-94.0;$10.54;4/6/92;($7.39);($7.39);0.0;
+3;keepbusy_cross(Buy);Buy to Open;36.0;$27.75;4/3/98;;$6.13;36.0;
+4;keepbusy_cross(SELL);Sell to Close;-36.0;$26.67;4/9/98;($38.98);($46.38);0.0;
+5;keepbusy_cross(Buy);Buy to Open;51.0;$19.55;1/10/03;;($54.03);51.0;
+6;keepbusy_cross(SELL);Sell to Close;-51.0;$19.03;1/16/03;($26.34);($72.72);0.0;
+7;keepbusy_cross(Buy);Buy to Open;41.0;$24.23;3/24/06;;($71.49);41.0;
+8;keepbusy_cross(SELL);Sell to Close;-41.0;$23.83;4/7/06;($16.22);($88.94);0.0;
+9;keepbusy_cross(Buy);Buy to Open;41.0;$24.01;7/28/06;;($70.08);41.0;
+10;keepbusy_cross(SELL);Sell to Close;-41.0;$23.82;8/11/06;($7.86);($96.80);0.0;
+11;keepbusy_cross(Buy);Buy to Open;160.0;$6.25;12/3/10;;($71.36);160.0;
+12;keepbusy_cross(SELL);Sell to Close;-160.0;$6.91;2/23/11;$106.38;$9.58;0.0;
+13;keepbusy_cross(Buy);Buy to Open;101.0;$9.84;8/22/14;;$9.58;101.0;
+14;keepbusy_cross(SELL);Sell to Close;-101.0;$9.79;9/26/14;($4.83);$4.75;0.0;
+15;keepbusy_cross(Buy);Buy to Open;69.0;$14.40;12/1/17;;$7.51;69.0;
+16;keepbusy_cross(SELL);Sell to Close;-69.0;$15.37;3/5/18;$67.14;$71.89;0.0;
+17;keepbusy_cross(Buy);Buy to Open;68.0;$14.65;9/13/19;;$78.69;68.0;
+18;keepbusy_cross(SELL);Sell to Close;-68.0;$13.67;10/3/19;($66.78);$5.10;0.0;
+19;keepbusy_cross(Buy);Buy to Open;70.0;$14.22;8/23/24;;$33.80;70.0;
+20;keepbusy_cross(SELL);Sell to Close;-70.0;$13.90;9/12/24;($22.73);($17.62);0.0;
+
+
+Max trade P/L: $106.38;
+
+Total P/L: ($17.62);
+
+Total order(s): 10;

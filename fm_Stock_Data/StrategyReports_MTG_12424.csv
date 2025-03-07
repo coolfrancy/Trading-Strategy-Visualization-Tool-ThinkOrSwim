@@ -1,0 +1,31 @@
+Strategy report
+Symbol: MTG
+Work Time: 8/13/93 - 2/9/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;63.0;$15.78;8/13/93;;$0.00;63.0;
+2;keepbusy_cross(SELL);Sell to Close;-63.0;$16.77;11/4/93;$62.02;$62.02;0.0;
+3;keepbusy_cross(Buy);Buy to Open;15.0;$62.90;3/23/01;;$84.07;15.0;
+4;keepbusy_cross(SELL);Sell to Close;-15.0;$61.24;4/24/01;($24.84);$37.18;0.0;
+5;keepbusy_cross(Buy);Buy to Open;103.0;$9.65;12/10/10;;$59.84;103.0;
+6;keepbusy_cross(SELL);Sell to Close;-103.0;$9.38;1/20/11;($27.49);$9.69;0.0;
+7;keepbusy_cross(Buy);Buy to Open;65.0;$15.18;1/12/18;;$5.79;65.0;
+8;keepbusy_cross(SELL);Sell to Close;-65.0;$14.70;2/1/18;($31.13);($21.45);0.0;
+9;keepbusy_cross(Buy);Buy to Open;74.0;$13.41;10/18/19;;($13.31);74.0;
+10;keepbusy_cross(SELL);Sell to Close;-74.0;$14.00;1/6/20;$43.51;$22.06;0.0;
+11;keepbusy_cross(Buy);Buy to Open;72.0;$13.75;4/5/21;;$41.50;72.0;
+12;keepbusy_cross(SELL);Sell to Close;-72.0;$13.63;5/13/21;($8.62);$13.45;0.0;
+13;keepbusy_cross(Buy);Buy to Open;63.0;$15.81;2/11/22;;$7.78;63.0;
+14;keepbusy_cross(SELL);Sell to Close;-63.0;$15.29;2/23/22;($33.00);($19.55);0.0;
+15;keepbusy_cross(Buy);Buy to Open;72.0;$13.72;1/23/23;;($10.19);72.0;
+16;keepbusy_cross(SELL);Sell to Close;-72.0;$13.41;3/10/23;($22.36);($41.91);0.0;
+17;keepbusy_cross(Buy);Buy to Open;52.0;$19.19;12/15/23;;($53.87);52.0;
+18;keepbusy_cross(SELL);Sell to Close;-52.0;$18.82;2/9/24;($19.19);($61.10);0.0;
+
+
+Max trade P/L: $62.02;
+
+Total P/L: ($61.10);
+
+Total order(s): 9;

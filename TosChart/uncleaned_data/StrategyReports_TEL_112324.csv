@@ -1,0 +1,39 @@
+Strategy report
+Symbol: TEL
+Work Time: 2/22/10 - 11/18/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;37.0;$26.40;2/22/10;;($8.51);37.0;
+2;keepbusy_cross(SELL);Sell to Close;-37.0;$27.77;5/7/10;$50.81;$50.81;0.0;
+3;keepbusy_cross(SELL);Sell to Close;-30.0;$31.88;1/9/12;($14.40);$22.91;-30.0;
+4;keepbusy_cross(Buy);Buy to Open;30.0;$32.36;1/9/12;;$36.41;0.0;
+5;keepbusy_cross(Buy);Buy to Open;28.0;$34.92;8/10/12;;$45.65;28.0;
+6;keepbusy_cross(SELL);Sell to Close;-28.0;$34.10;9/27/12;($23.01);$13.40;0.0;
+7;keepbusy_cross(Buy);Buy to Open;28.0;$35.50;11/26/12;;$1.64;28.0;
+8;keepbusy_cross(SELL);Sell to Close;-28.0;$34.32;11/29/12;($33.04);($19.64);0.0;
+9;keepbusy_cross(Buy);Buy to Open;22.0;$43.49;5/3/13;;$1.26;22.0;
+10;keepbusy_cross(SELL);Sell to Close;-22.0;$50.79;10/9/13;$160.54;$140.90;0.0;
+11;keepbusy_cross(SELL);Sell to Close;-16.0;$59.96;6/6/16;($4.80);$125.22;-16.0;
+12;keepbusy_cross(Buy);Buy to Open;16.0;$60.26;6/6/16;;$136.10;0.0;
+13;keepbusy_cross(Buy);Buy to Open;12.0;$81.22;7/14/17;;$139.34;12.0;
+14;keepbusy_cross(SELL);Sell to Close;-12.0;$79.38;8/11/17;($22.08);$114.02;0.0;
+15;keepbusy_cross(Buy);Buy to Open;9.0;$102.83;3/9/18;;$140.30;9.0;
+16;keepbusy_cross(SELL);Sell to Close;-9.0;$100.92;3/23/18;($17.18);$96.84;0.0;
+17;keepbusy_cross(Buy);Buy to Open;10.0;$97.00;9/13/19;;$93.74;10.0;
+18;keepbusy_cross(SELL);Sell to Close;-10.0;$91.16;9/24/19;($58.40);$38.44;0.0;
+19;keepbusy_cross(Buy);Buy to Open;10.0;$95.41;12/20/19;;$43.54;10.0;
+20;keepbusy_cross(SELL);Sell to Close;-10.0;$93.93;1/31/20;($14.77);$23.67;0.0;
+21;keepbusy_cross(Buy);Buy to Open;6.0;$154.97;11/5/21;;$46.65;6.0;
+22;keepbusy_cross(SELL);Sell to Close;-6.0;$152.88;12/21/21;($12.52);$11.15;0.0;
+23;keepbusy_cross(Buy);Buy to Open;7.0;$128.00;6/9/23;;$11.15;7.0;
+24;keepbusy_cross(SELL);Sell to Close;-7.0;$134.19;8/14/23;$43.33;$54.48;0.0;
+25;keepbusy_cross(Buy);Buy to Open;6.0;$155.20;11/8/24;;$53.64;6.0;
+26;keepbusy_cross(SELL);Sell to Close;-6.0;$149.51;11/18/24;($34.14);$20.35;0.0;
+
+
+Max trade P/L: $160.54;
+
+Total P/L: $20.35;
+
+Total order(s): 13;

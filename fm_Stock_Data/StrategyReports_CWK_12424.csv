@@ -1,0 +1,20 @@
+Strategy report
+Symbol: CWK
+Work Time: 12/10/21 - 11/8/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;49.0;$20.32;12/10/21;;$48.02;49.0;
+2;keepbusy_cross(SELL);Sell to Close;-49.0;$20.26;1/27/22;($3.00);($3.00);0.0;
+3;keepbusy_cross(Buy);Buy to Open;96.0;$10.31;4/5/24;;$34.44;96.0;
+4;keepbusy_cross(SELL);Sell to Close;-96.0;$10.16;4/11/24;($14.61);($17.61);0.0;
+5;keepbusy_cross(Buy);Buy to Open;84.0;$11.80;7/12/24;;($1.65);84.0;
+6;keepbusy_cross(SELL);Sell to Close;-84.0;$12.90;10/7/24;$92.50;$74.89;0.0;
+7;keepbusy_cross(Buy);Buy to Open;67.0;$14.88;11/8/24;;$77.57;67.0;
+
+
+Max trade P/L: $92.50;
+
+Total P/L: $74.89;
+
+Total order(s): 3;

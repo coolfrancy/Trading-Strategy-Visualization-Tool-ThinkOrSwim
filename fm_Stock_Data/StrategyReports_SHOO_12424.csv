@@ -1,0 +1,35 @@
+Strategy report
+Symbol: SHOO
+Work Time: 11/22/02 - 7/8/21
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;435.0;$2.30;11/22/02;;$4.01;435.0;
+2;keepbusy_cross(SELL);Sell to Close;-435.0;$2.32;1/22/03;$10.66;$10.66;0.0;
+3;keepbusy_cross(Buy);Buy to Open;386.0;$2.59;6/14/04;;($8.14);386.0;
+4;keepbusy_cross(SELL);Sell to Close;-386.0;$2.55;6/15/04;($12.56);($1.89);0.0;
+5;keepbusy_cross(Buy);Buy to Open;173.0;$5.78;7/24/09;;($14.19);173.0;
+6;keepbusy_cross(SELL);Sell to Close;-173.0;$7.38;11/20/09;$276.59;$274.70;0.0;
+7;keepbusy_cross(Buy);Buy to Open;71.0;$13.91;4/1/11;;$290.69;71.0;
+8;keepbusy_cross(SELL);Sell to Close;-71.0;$14.91;6/9/11;$71.42;$346.12;0.0;
+9;keepbusy_cross(Buy);Buy to Open;61.0;$16.30;1/13/12;;$368.35;61.0;
+10;keepbusy_cross(SELL);Sell to Close;-61.0;$18.70;4/10/12;$146.21;$492.33;0.0;
+11;keepbusy_cross(Buy);Buy to Open;48.0;$20.41;1/18/13;;$509.18;48.0;
+12;keepbusy_cross(SELL);Sell to Close;-48.0;$18.60;2/27/13;($87.25);$405.08;0.0;
+13;keepbusy_cross(Buy);Buy to Open;47.0;$21.01;4/26/13;;$399.02;47.0;
+14;keepbusy_cross(SELL);Sell to Close;-47.0;$20.94;6/24/13;($3.26);$401.82;0.0;
+15;keepbusy_cross(Buy);Buy to Open;34.0;$29.33;10/27/17;;$405.22;34.0;
+16;keepbusy_cross(SELL);Sell to Close;-34.0;$27.39;11/1/17;($66.11);$335.71;0.0;
+17;keepbusy_cross(Buy);Buy to Open;29.0;$33.60;7/8/19;;$316.86;29.0;
+18;keepbusy_cross(SELL);Sell to Close;-29.0;$32.98;7/9/19;($17.99);$317.72;0.0;
+19;keepbusy_cross(Buy);Buy to Open;28.0;$34.68;9/9/19;;$360.00;28.0;
+20;keepbusy_cross(SELL);Sell to Close;-28.0;$41.69;1/13/20;$196.32;$514.03;0.0;
+21;keepbusy_cross(Buy);Buy to Open;22.0;$44.04;6/25/21;;$528.11;22.0;
+22;keepbusy_cross(SELL);Sell to Close;-22.0;$41.72;7/8/21;($51.14);$462.90;0.0;
+
+
+Max trade P/L: $276.59;
+
+Total P/L: $462.90;
+
+Total order(s): 11;
