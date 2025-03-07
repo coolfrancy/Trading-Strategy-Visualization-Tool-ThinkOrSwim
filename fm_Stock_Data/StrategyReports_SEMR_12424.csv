@@ -1,0 +1,17 @@
+Strategy report
+Symbol: SEMR
+Work Time: 11/17/23 - 6/17/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;104.0;$9.53;11/17/23;;($2.08);104.0;
+2;keepbusy_cross(SELL);Sell to Close;-104.0;$11.43;2/2/24;$197.37;$197.37;0.0;
+3;keepbusy_cross(Buy);Buy to Open;65.0;$15.29;5/10/24;;$195.42;65.0;
+4;keepbusy_cross(SELL);Sell to Close;-65.0;$13.74;6/17/24;($100.75);$96.62;0.0;
+
+
+Max trade P/L: $197.37;
+
+Total P/L: $96.62;
+
+Total order(s): 2;

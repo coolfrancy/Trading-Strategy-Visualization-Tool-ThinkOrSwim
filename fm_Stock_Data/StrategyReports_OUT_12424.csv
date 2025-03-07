@@ -1,0 +1,19 @@
+Strategy report
+Symbol: OUT
+Work Time: 9/29/17 - 3/8/22
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;41.0;$23.83;9/29/17;;$24.60;41.0;
+2;keepbusy_cross(SELL);Sell to Close;-41.0;$22.14;11/8/17;($69.14);($69.14);0.0;
+3;keepbusy_cross(Buy);Buy to Open;38.0;$26.12;11/5/21;;($11.00);38.0;
+4;keepbusy_cross(SELL);Sell to Close;-38.0;$24.94;11/29/21;($44.78);($113.92);0.0;
+5;keepbusy_cross(Buy);Buy to Open;38.0;$25.93;3/4/22;;($114.68);38.0;
+6;keepbusy_cross(SELL);Sell to Close;-38.0;$25.06;3/8/22;($32.93);($146.86);0.0;
+
+
+Max trade P/L: ($32.93);
+
+Total P/L: ($146.86);
+
+Total order(s): 3;

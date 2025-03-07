@@ -1,0 +1,15 @@
+Strategy report
+Symbol: GH
+Work Time: 12/20/19 - 12/31/19
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;12.0;$81.24;12/20/19;;$18.48;12.0;
+2;keepbusy_cross(SELL);Sell to Close;-12.0;$77.01;12/31/19;($50.81);($50.81);0.0;
+
+
+Max trade P/L: ($50.81);
+
+Total P/L: ($50.81);
+
+Total order(s): 1;

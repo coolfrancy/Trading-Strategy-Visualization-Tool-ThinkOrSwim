@@ -1,0 +1,28 @@
+Strategy report
+Symbol: FFBC
+Work Time: 1/14/94 - 11/8/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;84.0;$11.90;1/14/94;;$0.00;84.0;
+2;keepbusy_cross(SELL);Sell to Close;-84.0;$11.01;2/18/94;($74.82);($74.82);0.0;
+3;keepbusy_cross(Buy);Buy to Open;55.0;$17.89;12/27/04;;($92.42);55.0;
+4;keepbusy_cross(SELL);Sell to Close;-55.0;$17.49;12/29/04;($22.00);($96.82);0.0;
+5;keepbusy_cross(Buy);Buy to Open;59.0;$16.69;7/1/11;;($82.66);59.0;
+6;keepbusy_cross(SELL);Sell to Close;-59.0;$16.30;7/15/11;($23.24);($120.06);0.0;
+7;keepbusy_cross(Buy);Buy to Open;61.0;$16.32;10/21/11;;($97.49);61.0;
+8;keepbusy_cross(SELL);Sell to Close;-61.0;$15.58;11/2/11;($45.17);($165.24);0.0;
+9;keepbusy_cross(Buy);Buy to Open;59.0;$16.72;10/31/14;;($116.86);59.0;
+10;keepbusy_cross(SELL);Sell to Close;-59.0;$17.50;1/7/15;$45.88;($119.36);0.0;
+11;keepbusy_cross(Buy);Buy to Open;43.0;$23.25;11/11/16;;($67.76);43.0;
+12;keepbusy_cross(SELL);Sell to Close;-43.0;$27.22;2/3/17;$170.64;$51.28;0.0;
+13;keepbusy_cross(Buy);Buy to Open;40.0;$24.44;11/5/21;;$80.48;40.0;
+14;keepbusy_cross(SELL);Sell to Close;-40.0;$23.50;11/29/21;($37.61);$13.67;0.0;
+15;keepbusy_cross(Buy);Buy to Open;35.0;$28.13;11/8/24;;$27.67;35.0;
+
+
+Max trade P/L: $170.64;
+
+Total P/L: $13.67;
+
+Total order(s): 7;

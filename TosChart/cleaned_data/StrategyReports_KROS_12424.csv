@@ -1,0 +1,5 @@
+Symbol: KROS Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
+1,keepbusy_cross(Buy),Buy to Open,20.0,$48.00,10/16/20,,$73.60,20.0,
+2,keepbusy_cross(SELL),Sell to Close,-20.0,$46.69,11/3/20,($26.22),($26.22),0.0,
+3,keepbusy_cross(Buy),Buy to Open,18.0,$54.38,4/1/22,,$65.04,18.0,
+4,keepbusy_cross(SELL),Sell to Close,-18.0,$53.77,4/27/22,($10.99),($37.22),0.0,

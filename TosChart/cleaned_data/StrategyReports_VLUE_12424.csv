@@ -1,0 +1,8 @@
+Symbol: VLUE Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
+1,keepbusy_cross(Buy),Buy to Open,11.0,$86.42,6/8/18,,$1.43,11.0,
+2,keepbusy_cross(SELL),Sell to Close,-11.0,$83.95,6/26/18,($27.21),($27.21),0.0,
+3,keepbusy_cross(Buy),Buy to Open,11.0,$84.59,9/13/19,,($26.55),11.0,
+4,keepbusy_cross(SELL),Sell to Close,-11.0,$81.06,10/2/19,($38.85),($66.06),0.0,
+5,keepbusy_cross(Buy),Buy to Open,9.0,$108.20,12/27/21,,($55.89),9.0,
+6,keepbusy_cross(SELL),Sell to Close,-9.0,$107.45,1/24/22,($6.73),($72.78),0.0,
+7,keepbusy_cross(Buy),Buy to Open,9.0,$108.87,9/20/24,,($77.28),9.0,

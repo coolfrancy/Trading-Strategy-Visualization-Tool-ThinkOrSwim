@@ -1,0 +1,35 @@
+Strategy report
+Symbol: CINF
+Work Time: 3/5/99 - 6/22/17
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;29.0;$33.96;3/5/99;;$11.51;29.0;
+2;keepbusy_cross(SELL);Sell to Close;-29.0;$32.88;3/18/99;($31.14);($31.14);0.0;
+3;keepbusy_cross(Buy);Buy to Open;27.0;$35.77;12/8/00;;($22.34);27.0;
+4;keepbusy_cross(SELL);Sell to Close;-27.0;$33.62;12/18/00;($58.16);($89.30);0.0;
+5;keepbusy_cross(Buy);Buy to Open;20.0;$47.86;9/15/06;;($77.70);20.0;
+6;keepbusy_cross(SELL);Sell to Close;-20.0;$47.16;10/25/06;($13.96);($103.27);0.0;
+7;keepbusy_cross(Buy);Buy to Open;21.0;$45.73;4/20/07;;($97.60);21.0;
+8;keepbusy_cross(SELL);Sell to Close;-21.0;$44.62;6/8/07;($23.41);($126.68);0.0;
+9;keepbusy_cross(Buy);Buy to Open;38.0;$26.19;12/28/09;;($127.06);38.0;
+10;keepbusy_cross(SELL);Sell to Close;-38.0;$26.07;1/28/10;($4.63);($131.31);0.0;
+11;keepbusy_cross(Buy);Buy to Open;35.0;$28.26;9/13/10;;($111.71);35.0;
+12;keepbusy_cross(SELL);Sell to Close;-35.0;$32.66;3/14/11;$153.87;$22.57;0.0;
+13;keepbusy_cross(Buy);Buy to Open;20.0;$48.30;10/24/14;;$31.37;20.0;
+14;keepbusy_cross(SELL);Sell to Close;-20.0;$50.41;1/7/15;$42.11;$64.67;0.0;
+15;keepbusy_cross(Buy);Buy to Open;18.0;$52.97;7/10/15;;$77.09;18.0;
+16;keepbusy_cross(SELL);Sell to Close;-18.0;$50.63;8/25/15;($42.12);$22.55;0.0;
+17;keepbusy_cross(Buy);Buy to Open;17.0;$56.22;10/9/15;;$21.70;17.0;
+18;keepbusy_cross(SELL);Sell to Close;-17.0;$58.58;12/17/15;$40.20;$62.75;0.0;
+19;keepbusy_cross(Buy);Buy to Open;13.0;$74.70;3/17/17;;$68.99;13.0;
+20;keepbusy_cross(SELL);Sell to Close;-13.0;$73.40;3/22/17;($16.84);$45.91;0.0;
+21;keepbusy_cross(Buy);Buy to Open;13.0;$73.89;6/16/17;;$44.09;13.0;
+22;keepbusy_cross(SELL);Sell to Close;-13.0;$71.60;6/22/17;($29.79);$16.12;0.0;
+
+
+Max trade P/L: $153.87;
+
+Total P/L: $16.12;
+
+Total order(s): 11;
