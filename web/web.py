@@ -12,16 +12,25 @@ def home():
 #shows chart
 @app.route('/chart', methods=['GET', 'POST'])
 def chart_view():
+    uncleaned_data_path='/workspaces/TosChartWeb/TosChart/uncleaned_data'
+
+    #to make sure the user imported a file
     if 'cfile' not in request.files:
         return 'No file was given'
     
-    file=request.files['cfile']
+    #shows all the files currently in folder
+    multi_file=request.files.getlist('cfile')
 
-    if file.filename=='':
-        return ' No selected file'
-    os.makedir('/workspaces/TosChartWeb/web', exit_ok=True)
-    file_path=os.path.join('/workspaces/TosChartWeb/web', file.filename)
-    file.save(file_path)
+    for file in multi_file:
+        if file.filename=='' or 'desktop.ini' in file.filename:
+            continue
+
+        #adds file to uncleaned_data fodler
+        os.makedirs(uncleaned_data_path, exist_ok=True)
+        file_name=os.path.basename(file.filename)
+        file_path=os.path.join(uncleaned_data_path, file_name)
+        file.save(file_path)
+        
     return 'file saved'
     
 
