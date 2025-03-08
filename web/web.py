@@ -1,6 +1,12 @@
 from flask import Flask, render_template, request
+import sys
 import os
 
+#path to TosChart for importing
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))  
+
+from TosChart.cleaner.cleaner import wash
+from TosChart.visual import data
 
 app=Flask(__name__)
 
@@ -13,6 +19,7 @@ def home():
 @app.route('/chart', methods=['GET', 'POST'])
 def chart_view():
     uncleaned_data_path='/workspaces/TosChartWeb/TosChart/uncleaned_data'
+    cleaned_data_path='/workspaces/TosChartWeb/TosChart/cleaned_data'
 
     #to make sure the user imported a file
     if 'cfile' not in request.files:
@@ -30,8 +37,11 @@ def chart_view():
         file_name=os.path.basename(file.filename)
         file_path=os.path.join(uncleaned_data_path, file_name)
         file.save(file_path)
-        
-    return 'file saved'
+
+    wash(uncleaned_data_path, cleaned_data_path)
+    data(cleaned_data_path)
+
+    return 'done'
     
 
 if __name__=='__main__':
