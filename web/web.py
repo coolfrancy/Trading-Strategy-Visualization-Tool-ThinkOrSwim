@@ -6,6 +6,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))  
 
 from TosChart.cleaner.cleaner import wash
+from TosChart.cleaner.erase import clean_folder
 from TosChart.visual import data
 
 app=Flask(__name__)
@@ -20,10 +21,14 @@ def home():
 def chart_view():
     uncleaned_data_path='/workspaces/TosChartWeb/TosChart/uncleaned_data'
     cleaned_data_path='/workspaces/TosChartWeb/TosChart/cleaned_data'
+    #deletes data from folder so prev data dont effect new chart
+    clean_folder(uncleaned_data_path)
+    clean_folder(cleaned_data_path)
 
     #to make sure the user imported a file
     if 'cfile' not in request.files:
         return 'No file was given'
+
     
     #shows all the files currently in folder
     multi_file=request.files.getlist('cfile')
@@ -41,7 +46,7 @@ def chart_view():
     wash(uncleaned_data_path, cleaned_data_path)
     data(cleaned_data_path)
 
-    return send_from_directory('/workspaces/TosChartWeb/web/static', 'graph.png')
+    return send_from_directory('/workspaces/TosChartWeb/web/static/', 'graph.png')
     
 
 if __name__=='__main__':
