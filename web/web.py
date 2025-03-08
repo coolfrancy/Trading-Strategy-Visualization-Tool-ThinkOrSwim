@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 import sys
 import os
 
@@ -41,7 +41,7 @@ def chart_view():
     wash(uncleaned_data_path, cleaned_data_path)
     data(cleaned_data_path)
 
-    return 'done'
+    return send_from_directory('/workspaces/TosChartWeb/web/static', 'graph.png')
     
 
 if __name__=='__main__':
