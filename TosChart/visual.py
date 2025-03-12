@@ -1,4 +1,4 @@
-def data():
+def data(cleaned_data_path):
     import pandas as pd
     import os
     import traceback
@@ -8,8 +8,6 @@ def data():
 
 
     #this will give you a list of stocks from the folder
-    cleaned_data_path='/workspaces/TosChartWeb/TosChart/cleaned_data'
-
     stocks=os.listdir(cleaned_data_path)
 
     lists=[]
@@ -28,7 +26,8 @@ def data():
             for ind,num in enumerate(dt[date]):
                 if ind%2!=0:
                     if ind>0:
-                        dt[date][ind-1]+='-'+num
+                        dt.loc[ind-1, date]+='-'+num
+
                 #trying somethin
 
             dt['Trade P/L']=dt['Trade P/L'].shift(periods=-1)
@@ -54,7 +53,6 @@ def data():
             print(e)
             continue
 
-    print(lists)
     #added part for graphing stuff
     comb=pd.concat(lists)
     comb['Trade P/L'] = comb['Trade P/L'].str.replace(r'[\$,]', '', regex=True).replace(r'\((\d+(\.\d+)?)\)', r'-\1', regex=True)
@@ -85,14 +83,14 @@ def data():
     plt.legend()
     plt.grid(True)
     plt.show()
-    plt.savefig('graph')
+    plt.savefig('/workspaces/TosChartWeb/web/static/graph.png')
 
 
 
 
 
 if __name__=='__main__':
-    data()
+    data('/workspaces/TosChartWeb/TosChart/cleaned_data')
 
 
 

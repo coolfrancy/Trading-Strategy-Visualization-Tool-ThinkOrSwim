@@ -1,8 +1,5 @@
 format to a website for tos users to add files into and see information visually
 
-fix visual.py so its faster/bettter
-
-visuaal.py runs pandas script then saves the chart as a picture/png that will be shown to the user,
-
-###
-i was able to get saved files from user now i just need to update it so the file i saved is looked at as uncleaned data.
+#important
+-clean visual.py
+-make website visually pleasing
