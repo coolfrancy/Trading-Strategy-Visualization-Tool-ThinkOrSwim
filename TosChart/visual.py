@@ -53,29 +53,26 @@ def data(cleaned_data_path):
             print(e)
             continue
 
-    #added part for graphing stuff
-    comb=pd.concat(lists)
-    comb['Trade P/L'] = comb['Trade P/L'].str.replace(r'[\$,]', '', regex=True).replace(r'\((\d+(\.\d+)?)\)', r'-\1', regex=True)
-    comb['Trade P/L']=pd.to_numeric(comb['Trade P/L'])
+    df=pd.concat(lists)
+    df['Trade P/L'] = df['Trade P/L'].str.replace(r'[\$,]', '', regex=True).replace(r'\((\d+(\.\d+)?)\)', r'-\1', regex=True)
+    df['Trade P/L']=pd.to_numeric(df['Trade P/L'])
 
-    comb['Trade P/L'].describe()
     sell=[]
-    for num in comb['Date/Time']:
+    for num in df['Date/Time']:
         b, s=num.split('-')
         sell.append(s)
-    comb['Date']=sell
-    df=comb
+    df['Date']=sell
 
     # Ensure 'Date' is in datetime format and sort by date
     df['Date'] = pd.to_datetime(df['Date'])
     df = df.sort_values('Date')
 
     # Calculate cumulative P/L
-    df['Trade P/L'] = df['Trade P/L'].cumsum()
+    df['Trade Sum'] = df['Trade P/L'].cumsum()
 
-    # Plot the line graph
+    # Plot and save the line graph
     plt.figure(figsize=(10, 6))
-    plt.plot(df['Date'], df['Trade P/L'], marker='o', label='Cumulative P/L', color='blue')
+    plt.plot(df['Date'], df['Trade Sum'], marker='o', label='Cumulative P/L', color='blue')
     plt.axhline(0, color='red', linestyle='--', label='Break-Even Line')
     plt.title('Cumulative Profit/Loss Over Time')
     plt.xlabel('Date')
@@ -85,7 +82,36 @@ def data(cleaned_data_path):
     plt.show()
     plt.savefig('/workspaces/TosChartWeb/web/static/graph.png')
 
+    #calculates winners and losers
+    count_win=0
+    count_loss=0
+    sum_win=0
+    sum_loss=0
 
+    for t in df['Trade P/L']:
+        if t>0:
+            sum_win+=t
+            count_win+=1
+        if t<0:
+            sum_loss+=t
+            count_loss+=1
+
+    average_win=sum_win/count_win
+    average_loss=sum_loss/count_loss
+    amount_ratio=round(average_win/abs(average_loss), 2)
+    win_loss_percentage=round((count_win/count_loss)*100, 2)
+
+    #gives you information on data
+    description=df['Trade P/L'].describe()
+    print(df.head())
+
+    return {
+        'description':description,
+        'win':count_win,
+        'loss':count_loss,
+        'ratio':amount_ratio,
+        'percentage':win_loss_percentage
+        } 
 
 
 
