@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+    <img src="static/graph.png" alt="Backtested chart" width=700 height=500 class="chart">
+    <div class="result">
+        <h1>How you did</h1>
+        <p>Total winners: {{ info.win }}</p>
+        <p>Total lossers: {{ info.loss }}</p>
+        <p>Win/Loss Percentage: {{ info.percentage }}%</p>
+        <p>Win/Loss Amount Ratio: {{ info.ratio }}</p>
+        <p>Description: {{ info.description }}</p>
+    <div\>
+{% endblock %}
