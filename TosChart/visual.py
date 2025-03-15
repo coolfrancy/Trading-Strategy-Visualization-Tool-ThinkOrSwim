@@ -1,8 +1,8 @@
 def data(cleaned_data_path):
     import pandas as pd
     import os
-    import traceback
     import matplotlib.pyplot as plt
+    from TosChart.ai import gpt_summary
 
     #refactor the who code to the new database
 
@@ -102,15 +102,23 @@ def data(cleaned_data_path):
     win_loss_percentage=round((count_win/count_loss)*100, 2)
 
     #gives you information on data
-    description=df['Trade P/L'].describe()
-    print(df.head())
+    desc_dict=df['Trade P/L'].describe().to_dict()
+    description=[]
+    for name,value in desc_dict.items():
+        if'%' not in name:
+            description.append(name+' '+str(value))
+
+    description=', '.join(description)
+
+    summary=gpt_summary(description, str(win_loss_percentage), str(amount_ratio))
 
     return {
         'description':description,
         'win':count_win,
         'loss':count_loss,
         'ratio':amount_ratio,
-        'percentage':win_loss_percentage
+        'percentage':win_loss_percentage,
+        'summary':summary
         } 
 
 
