@@ -4,13 +4,17 @@
 {% endblock %}
 
 {% block body %}
-    <img src="static/graph.png" alt="Backtested chart" width=700 height=500 class="chart">
+    <img src="static/graph.png" alt="Backtested chart" width=1400 height=800 class="chart">
     <div class="result">
-        <h1>How you did</h1>
+        <h1>Strategy Performance</h1>
         <p>Total winners: {{ info.win }}</p>
         <p>Total lossers: {{ info.loss }}</p>
         <p>Win/Loss Percentage: {{ info.percentage }}%</p>
         <p>Win/Loss Amount Ratio: {{ info.ratio }}</p>
         <p>Description: {{ info.description }}</p>
+    <div\>
+    <div class="summary">
+        <h1>Summary</h1>
+        <p>{{ info.summary }}</p>
     <div\>
 {% endblock %}

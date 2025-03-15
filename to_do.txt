@@ -1,5 +1,4 @@
 format to a website for tos users to add files into and see information visually
 
 #important
--clean visual.py
--make website visually pleasing
+-clean code
