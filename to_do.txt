@@ -1,4 +1,2 @@
-format to a website for tos users to add files into and see information visually
-
 #important
 -clean code
