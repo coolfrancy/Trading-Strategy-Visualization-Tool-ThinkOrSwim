@@ -99,7 +99,7 @@ def data(cleaned_data_path):
     average_win=sum_win/count_win
     average_loss=sum_loss/count_loss
     amount_ratio=round(average_win/abs(average_loss), 2)
-    win_loss_percentage=round((count_win/count_loss)*100, 2)
+    win_loss_percentage=round((count_win/(count_loss+count_win))*100, 2)
 
     #gives you information on data
     desc_dict=df['Trade P/L'].describe().to_dict()
