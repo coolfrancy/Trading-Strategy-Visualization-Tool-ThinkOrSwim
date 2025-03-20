@@ -44,6 +44,7 @@ def wash(uncleaned_data_path, cleaned_data_path):
         except Exception as e:
             print(f"Error processing {strat}: {e}")
             continue
+    
 
 if __name__=='__main__':
     wash('/workspaces/TosChart/TosChart/uncleaned_data', '/workspaces/TosChart/TosChart/cleaned_data')

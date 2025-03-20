@@ -4,12 +4,21 @@
 {% endblock %}
 
 {% block body %}
-<h1 class="Tittle">    
-    'Backtest Chart'
-</h1>
-<form class="user_file" method="POST" action="/clean_files"  enctype="multipart/form-data">
-    <input type="file" name="cfile" webkitdirectory multiple><br><br>
-    <button class="sub_button">Submit</button>
-</form>
+<div class="page">
+    <h1 class="Tittle">    
+        Backtest Chart
+    </h1>
+    <form class="user_file" method="POST" action="/clean_files"  enctype="multipart/form-data">
+        <input type="file" name="cfile" class='cfile' webkitdirectory multiple required><br><br>
+        <button class="sub_button">Submit</button>
+    </form>
+    <video width="500" height="400" class='video' controls>
+        <source src="static/tutorial.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h2 class="tutorial_title">
+        Tutorial ^
+    </h2>
+</div>
 
 {% endblock %}

@@ -3,3 +3,12 @@
     top:150px;
     left:1300px
 }
+
+.page{
+    width: fit-content; /* Set width or max-width */
+    margin: 0 auto; /* Auto margin centers horizontally */
+}
+
+.sub_button{
+    left:200px
+}
