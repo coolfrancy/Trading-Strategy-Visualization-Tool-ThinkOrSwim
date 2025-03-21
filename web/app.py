@@ -58,8 +58,8 @@ def clean_files():
 def chart():
     try:
         info=data(cleaned_data_path)
-    except ValueError:
-        return 'No ThinkOrSwim csv file found'
+    except ValueError as e:
+        return f'No ThinkOrSwim csv file found : {e}'
     
     return render_template('chart.html', info=info)
 
