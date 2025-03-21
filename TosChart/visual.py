@@ -3,6 +3,10 @@ def data(cleaned_data_path):
     import os
     import matplotlib.pyplot as plt
     from TosChart.ai import gpt_summary
+    
+    
+    chart_path = os.path.join(os.getcwd(), "web", "static", "graph.png")  
+
 
     #refactor the who code to the new database
 
@@ -80,7 +84,7 @@ def data(cleaned_data_path):
     plt.legend()
     plt.grid(True)
     plt.show()
-    plt.savefig('/workspaces/TosChartWeb/web/static/graph.png')
+    plt.savefig(chart_path)
 
     #calculates winners and losers
     wins = df[df['Trade P/L'] > 0]['Trade P/L']
