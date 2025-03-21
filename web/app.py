@@ -12,8 +12,10 @@ from TosChart.visual import data
 app=Flask(__name__)
 
 #where the cleaned and uncleaned data is being stored
-uncleaned_data_path='/workspaces/TosChartWeb/TosChart/uncleaned_data'
-cleaned_data_path='/workspaces/TosChartWeb/TosChart/cleaned_data'
+
+uncleaned_data_path = os.path.join(os.getcwd(), 'TosChart', 'uncleaned_data')
+cleaned_data_path = os.path.join(os.getcwd(), 'TosChart', 'cleaned_data')
+
 
 #home page allows you to add files
 @app.route('/')
