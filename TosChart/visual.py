@@ -64,8 +64,8 @@ def data(cleaned_data_path):
     df['Date']=sell
 
     # Ensure 'Date' is in datetime format and sort by date
-    df['Date'] = pd.to_datetime(df['Date'])
-    df = df.sort_values('Date')
+    df = df.assign(Date=pd.to_datetime(df['Date'])).sort_values('Date')
+
 
     # Calculate cumulative P/L
     df['Trade Sum'] = df['Trade P/L'].cumsum()
@@ -83,18 +83,12 @@ def data(cleaned_data_path):
     plt.savefig('/workspaces/TosChartWeb/web/static/graph.png')
 
     #calculates winners and losers
-    count_win=0
-    count_loss=0
-    sum_win=0
-    sum_loss=0
+    wins = df[df['Trade P/L'] > 0]['Trade P/L']
+    losses = df[df['Trade P/L'] < 0]['Trade P/L']
 
-    for t in df['Trade P/L']:
-        if t>0:
-            sum_win+=t
-            count_win+=1
-        if t<0:
-            sum_loss+=t
-            count_loss+=1
+    count_win, count_loss = len(wins), len(losses)
+    sum_win, sum_loss = wins.sum(), losses.sum()
+
 
     average_win=sum_win/count_win
     average_loss=sum_loss/count_loss
