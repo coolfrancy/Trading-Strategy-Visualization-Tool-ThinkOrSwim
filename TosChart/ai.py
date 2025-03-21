@@ -1,13 +1,17 @@
 def gpt_summary(description, win_percentage='', amount_ratio=''):
     #imports
     import os
-    import sys
     from openai import OpenAI
     from dotenv import load_dotenv
     load_dotenv()
+
     ###
     api_gpt=os.getenv('api_gpt')
-    
+
+    if not api_gpt:
+        raise ValueError("API key for OpenAI is missing. Please check your .env file.")
+
+
     client = OpenAI(api_key=api_gpt)
     completion = client.chat.completions.create(
         model="gpt-4o-mini",

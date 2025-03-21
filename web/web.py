@@ -29,15 +29,17 @@ def clean_files():
 
     #to make sure the user imported a file
     if 'cfile' not in request.files:
-        return 'No file was given'
+        return 'No file was given', 404
 
     
     #shows all the files currently in folder
     multi_file=request.files.getlist('cfile')
+    if not multi_file or all(file.filename == '' for file in multi_file):
+        return 'No valid files uploaded', 400
 
     for file in multi_file:
         if file.filename=='' or 'desktop.ini' in file.filename:
-            continue
+            continue #skips invalid files
 
         #adds file to uncleaned_data folder
         os.makedirs(uncleaned_data_path, exist_ok=True)
@@ -52,10 +54,21 @@ def clean_files():
 
 @app.route('/chart')
 def chart():
-    info=data(cleaned_data_path)
+    try:
+        info=data(cleaned_data_path)
+    except ValueError:
+        return 'No ThinkOrSwim csv file found'
+    
     return render_template('chart.html', info=info)
 
     
+@app.errorhandler(500)
+def internal_error(error):
+    return "Something went wrong. Please try again.", 500
+
+@app.errorhandler(404)
+def not_found_error(error):
+    return "Page not found.", 404
 
 if __name__=='__main__':
     app.run(debug=True, port=5002)
