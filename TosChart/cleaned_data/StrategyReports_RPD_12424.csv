@@ -1,3 +1,0 @@
-Symbol: RPD Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
-1,keepbusy_cross(Buy),Buy to Open,53.0,$18.55,10/6/17,,($4.24),53.0,
-2,keepbusy_cross(SELL),Sell to Close,-53.0,$18.57,1/3/18,$0.92,$0.92,0.0,

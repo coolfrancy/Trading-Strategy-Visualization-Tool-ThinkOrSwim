@@ -1,7 +1,0 @@
-Symbol: ETSY Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
-1,keepbusy_cross(Buy),Buy to Open,52.0,$18.96,12/8/17,,$18.72,52.0,
-2,keepbusy_cross(SELL),Sell to Close,-52.0,$18.71,1/31/18,($13.00),($13.00),0.0,
-3,keepbusy_cross(Buy),Buy to Open,6.0,$160.55,11/30/20,,($12.10),6.0,
-4,keepbusy_cross(SELL),Sell to Close,-6.0,$193.04,2/24/21,$194.94,$181.94,0.0,
-5,keepbusy_cross(Buy),Buy to Open,4.0,$201.85,7/23/21,,$209.98,4.0,
-6,keepbusy_cross(SELL),Sell to Close,-4.0,$190.62,8/2/21,($44.92),$137.02,0.0,

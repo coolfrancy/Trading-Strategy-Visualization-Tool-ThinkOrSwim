@@ -1,7 +1,0 @@
-Symbol: AMX Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
-1,keepbusy_cross(Buy),Buy to Open,80.0,$12.44,10/28/05,,$33.20,80.0,
-2,keepbusy_cross(SELL),Sell to Close,-80.0,$16.86,3/29/06,$354.24,$354.24,0.0,
-3,keepbusy_cross(Buy),Buy to Open,32.0,$30.80,3/28/08,,$356.80,32.0,
-4,keepbusy_cross(SELL),Sell to Close,-32.0,$29.00,4/28/08,($57.76),$296.48,0.0,
-5,keepbusy_cross(Buy),Buy to Open,65.0,$15.31,6/21/19,,$288.68,65.0,
-6,keepbusy_cross(SELL),Sell to Close,-65.0,$14.79,6/28/19,($33.93),$262.55,0.0,

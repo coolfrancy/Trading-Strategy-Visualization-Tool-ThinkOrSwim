@@ -1,7 +1,0 @@
-Symbol: CNS Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
-1,keepbusy_cross(Buy),Buy to Open,32.0,$30.47,4/29/11,,$31.68,32.0,
-2,keepbusy_cross(SELL),Sell to Close,-32.0,$29.09,5/18/11,($44.09),($44.09),0.0,
-3,keepbusy_cross(Buy),Buy to Open,23.0,$43.36,12/29/14,,($44.09),23.0,
-4,keepbusy_cross(SELL),Sell to Close,-23.0,$41.88,1/5/15,($34.03),($78.12),0.0,
-5,keepbusy_cross(Buy),Buy to Open,23.0,$41.93,6/15/18,,($78.81),23.0,
-6,keepbusy_cross(SELL),Sell to Close,-23.0,$40.36,6/29/18,($36.22),($114.34),0.0,
