@@ -27,7 +27,7 @@ This tool transforms raw ThinkOrSwim back-testing data into interactive visual c
 
 ```bash
 # Clone the repository
-git clone https://github.com/coolfrancy/TosChartWeb.git
+git clone https://github.com/coolfrancy/Trading-Strategy-Visualization-Tool-ThinkOrSwim.git
 
 # Navigate to project directory
 cd Trading-Strategy-Visualization-Tool-ThinkOrSwim
