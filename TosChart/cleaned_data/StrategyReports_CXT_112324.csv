@@ -1,4 +1,0 @@
-Symbol: CXT Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
-1,keepbusy_cross(Buy),Buy to Open,15.0,$64.62,6/24/24,,($32.55),15.0,
-2,keepbusy_cross(SELL),Sell to Close,-15.0,$61.30,6/26/24,($49.87),($49.87),0.0,
-3,keepbusy_cross(Buy),Buy to Open,17.0,$58.24,11/22/24,,($18.08),17.0,

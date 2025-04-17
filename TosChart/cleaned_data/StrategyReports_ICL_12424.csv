@@ -1,7 +1,0 @@
-Symbol: ICL Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
-1,keepbusy_cross(Buy),Buy to Open,137.0,$7.25,5/22/15,,$2.74,137.0,
-2,keepbusy_cross(SELL),Sell to Close,-137.0,$7.15,5/27/15,($13.26),($13.26),0.0,
-3,keepbusy_cross(Buy),Buy to Open,225.0,$4.43,2/26/18,,($13.26),225.0,
-4,keepbusy_cross(SELL),Sell to Close,-225.0,$4.17,3/2/18,($58.72),($71.99),0.0,
-5,keepbusy_cross(Buy),Buy to Open,186.0,$5.35,8/2/19,,($60.83),186.0,
-6,keepbusy_cross(SELL),Sell to Close,-186.0,$5.21,8/14/19,($26.04),($98.03),0.0,

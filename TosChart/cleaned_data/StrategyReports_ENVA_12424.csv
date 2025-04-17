@@ -1,7 +1,0 @@
-Symbol: ENVA Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
-1,keepbusy_cross(Buy),Buy to Open,36.0,$27.17,8/2/19,,($24.84),36.0,
-2,keepbusy_cross(SELL),Sell to Close,-36.0,$23.98,8/27/19,($115.00),($115.00),0.0,
-3,keepbusy_cross(Buy),Buy to Open,27.0,$36.89,11/5/21,,($17.53),27.0,
-4,keepbusy_cross(SELL),Sell to Close,-27.0,$37.38,12/21/21,$13.27,($101.74),0.0,
-5,keepbusy_cross(Buy),Buy to Open,21.0,$46.59,2/11/22,,($138.70),21.0,
-6,keepbusy_cross(SELL),Sell to Close,-21.0,$40.80,2/23/22,($121.59),($223.33),0.0,

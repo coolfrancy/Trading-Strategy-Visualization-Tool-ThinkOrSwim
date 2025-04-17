@@ -1,5 +1,0 @@
-Symbol: FTS Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
-1,keepbusy_cross(Buy),Buy to Open,24.0,$41.41,12/11/20,,$2.64,24.0,
-2,keepbusy_cross(SELL),Sell to Close,-24.0,$40.68,12/22/20,($17.52),($17.52),0.0,
-3,keepbusy_cross(Buy),Buy to Open,25.0,$39.95,7/12/24,,($17.52),25.0,
-4,keepbusy_cross(SELL),Sell to Close,-25.0,$39.41,7/16/24,($13.42),($30.94),0.0,
