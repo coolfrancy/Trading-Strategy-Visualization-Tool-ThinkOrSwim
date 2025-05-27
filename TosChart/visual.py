@@ -2,14 +2,11 @@ def data(cleaned_data_path):
     import pandas as pd
     import os
     import matplotlib.pyplot as plt
-    from TosChart.ai import gpt_summary
-    
-    
+    from TosChart.summary import Summary
+
     chart_path = os.path.join(os.getcwd(), "web", "static", "graph.png")  
 
-
     #refactor the who code to the new database
-
 
     #this will give you a list of stocks from the folder
     stocks=os.listdir(cleaned_data_path)
@@ -70,7 +67,6 @@ def data(cleaned_data_path):
     # Ensure 'Date' is in datetime format and sort by date
     df = df.assign(Date=pd.to_datetime(df['Date'])).sort_values('Date')
 
-
     # Calculate cumulative P/L
     df['Trade Sum'] = df['Trade P/L'].cumsum()
 
@@ -83,6 +79,11 @@ def data(cleaned_data_path):
     plt.ylabel('Cumulative Profit/Loss')
     plt.legend()
     plt.grid(True)
+
+    # Set the background color to light grey
+    plt.gca().set_facecolor('lightgrey')  # Chart area background
+    plt.gcf().patch.set_facecolor('lightgrey')  # Figure background
+    
     plt.show()
     plt.savefig(chart_path)
 
@@ -92,7 +93,6 @@ def data(cleaned_data_path):
 
     count_win, count_loss = len(wins), len(losses)
     sum_win, sum_loss = wins.sum(), losses.sum()
-
 
     average_win=sum_win/count_win
     average_loss=sum_loss/count_loss
@@ -106,25 +106,10 @@ def data(cleaned_data_path):
         if'%' not in name:
             description.append(name+' '+str(value))
 
-    description=', '.join(description)
 
-    summary=gpt_summary(description, str(win_loss_percentage), str(amount_ratio))
+    summary=Summary(count_win, count_loss, win_loss_percentage, amount_ratio)
 
-    return {
-        'description':description,
-        'win':count_win,
-        'loss':count_loss,
-        'ratio':amount_ratio,
-        'percentage':win_loss_percentage,
-        'summary':summary
-        } 
-
-
+    return summary
 
 if __name__=='__main__':
     data('/workspaces/TosChartWeb/TosChart/cleaned_data')
-
-
-
-
-

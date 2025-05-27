@@ -57,11 +57,11 @@ def clean_files():
 @app.route('/chart')
 def chart():
     try:
-        info=data(cleaned_data_path)
+        summary=data(cleaned_data_path)
     except ValueError as e:
         return f'No ThinkOrSwim csv file found : {e}'
-    
-    return render_template('chart.html', info=info)
+
+    return render_template('chart.html', summary=summary)
 
     
 @app.errorhandler(500)
