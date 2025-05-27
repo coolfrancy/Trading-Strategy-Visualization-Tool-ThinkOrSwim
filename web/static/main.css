@@ -1,14 +1,44 @@
-.result{
+.summary{
     position:absolute;
     top:150px;
     left:1300px
 }
 
-.page{
-    width: fit-content; /* Set width or max-width */
-    margin: 0 auto; /* Auto margin centers horizontally */
+.page {
+    width: fit-content;
+    margin: 0 auto;
 }
+
 
 .sub_button{
     left:200px
+}
+
+.chart{
+    position:absolute;
+    right:550px;
+}
+
+.home-button{
+    position:absolute;
+    top:450px;
+    right:320px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: lightblue;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4A90E2;
+}
+
+
+html, body{
+    background-color: lightgray;
 }
