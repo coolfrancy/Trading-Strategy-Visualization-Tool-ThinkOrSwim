@@ -3,8 +3,16 @@ def data(cleaned_data_path):
     import os
     import matplotlib.pyplot as plt
     from TosChart.summary import Summary
+    from datetime import datetime
 
     chart_path = os.path.join(os.getcwd(), "web", "static", "graph.png")  
+
+    # US Recession periods (NBER official dates)
+    recession_periods = [
+        ('2001-03-01', '2001-11-30'),  # Dot-com crash
+        ('2007-12-01', '2009-06-30'),  # Great Recession
+        ('2020-02-01', '2020-04-30'),  # COVID-19 recession
+    ]
 
     #refactor the who code to the new database
 
@@ -71,14 +79,51 @@ def data(cleaned_data_path):
     df['Trade Sum'] = df['Trade P/L'].cumsum()
 
     # Plot and save the line graph
-    plt.figure(figsize=(10, 6))
-    plt.plot(df['Date'], df['Trade Sum'], marker='o', label='Cumulative P/L', color='blue')
+    plt.figure(figsize=(12, 8))
+    
+    # Plot the main line
+    plt.plot(df['Date'], df['Trade Sum'], marker='o', label='Cumulative P/L', color='blue', linewidth=2, markersize=4)
+    
+    # Add recession periods as shaded areas
+    for start_date, end_date in recession_periods:
+        start = pd.to_datetime(start_date)
+        end = pd.to_datetime(end_date)
+        
+        # Only shade if the recession period overlaps with our data
+        if start <= df['Date'].max() and end >= df['Date'].min():
+            plt.axvspan(start, end, alpha=0.3, color='red', label='Recession Period' if start_date == recession_periods[0][0] else "")
+    
+    # Add labels for recession periods
+    recession_labels = {
+        '2001-03-01': '2001 Crash',
+        '2007-12-01': '2007 Crash', 
+        '2020-02-01': '2020 Crash'
+    }
+    
+    # Add text labels for recessions
+    for start_date, end_date in recession_periods:
+        start = pd.to_datetime(start_date)
+        end = pd.to_datetime(end_date)
+        
+        # Only add labels if within our data range
+        if start <= df['Date'].max() and end >= df['Date'].min():
+            # Position label in the middle of the recession period
+            mid_date = start + (end - start) / 2
+            
+            # Get y position for label (top of chart)
+            y_pos = plt.ylim()[1] * 0.9
+            
+            # Add text label
+            plt.text(mid_date, y_pos, recession_labels[start_date], 
+                    rotation=0, ha='center', va='top', fontsize=10, fontweight='bold',
+                    bbox=dict(boxstyle="round,pad=0.3", facecolor='white', alpha=0.8, edgecolor='red'))
+    
     plt.axhline(0, color='red', linestyle='--', label='Break-Even Line')
-    plt.title('Cumulative Profit/Loss Over Time')
-    plt.xlabel('Date')
-    plt.ylabel('Cumulative Profit/Loss')
-    plt.legend()
-    plt.grid(True)
+    plt.title('Cumulative Profit/Loss Over Time with Recession Periods', fontsize=14, fontweight='bold')
+    plt.xlabel('Date', fontsize=12)
+    plt.ylabel('Cumulative Profit/Loss', fontsize=12)
+    plt.legend(loc='upper left')
+    plt.grid(True, alpha=0.3)
 
     # Set the background color to light grey
     plt.gca().set_facecolor('lightgrey')  # Chart area background
@@ -86,9 +131,13 @@ def data(cleaned_data_path):
 
     # Format y-axis to show dollar signs
     plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'${x:,.0f}'))
+    
+    # Rotate x-axis labels for better readability
+    plt.xticks(rotation=45)
+    plt.tight_layout()
 
     plt.show()
-    plt.savefig(chart_path)
+    plt.savefig(chart_path, dpi=300, bbox_inches='tight')
 
     #calculates winners and losers
     wins = df[df['Trade P/L'] > 0]['Trade P/L']
@@ -108,7 +157,6 @@ def data(cleaned_data_path):
     for name,value in desc_dict.items():
         if'%' not in name:
             description.append(name+' '+str(value))
-
 
     summary=Summary(count_win, count_loss, win_loss_percentage, amount_ratio)
 
