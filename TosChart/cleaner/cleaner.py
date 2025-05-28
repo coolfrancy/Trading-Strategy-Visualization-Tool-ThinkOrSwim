@@ -42,7 +42,7 @@ def wash(uncleaned_data_path, cleaned_data_path):
             os.remove(uncleaned_data_path + '/' + strat)
             continue
         except Exception as e:
-            print(f"Error processing {strat}: {e}")
+            print(f"Error processing. {strat}: {e}")
             continue
     
 
