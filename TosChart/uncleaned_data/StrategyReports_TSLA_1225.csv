@@ -1,0 +1,39 @@
+Strategy report
+Symbol: TSLA
+Work Time: 4/11/12 - 10/22/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;FReversalSwing(BUY);Buy to Open;184.0;$2.16;4/11/12;;$7.73;184.0;
+2;FReversalSwing(BUY);Buy to Open;186.0;$2.15;4/17/12;;($2.82);370.0;
+3;FReversalSwing(BUY);Buy to Open;186.0;$2.15;4/18/12;;$12.75;556.0;
+4;FReversalSwing(SELL);Sell to Close;-556.0;$1.88;5/18/12;($151.03);($151.03);0.0;
+5;FReversalSwing(BUY);Buy to Open;174.0;$2.29;2/26/13;;($150.45);174.0;
+6;FReversalSwing(SELL);Sell to Close;-174.0;$2.51;3/7/13;$38.40;($112.63);0.0;
+7;FReversalSwing(BUY);Buy to Open;24.0;$16.41;8/7/15;;($118.42);24.0;
+8;FReversalSwing(BUY);Buy to Open;24.0;$16.17;8/10/15;;($122.81);48.0;
+9;FReversalSwing(BUY);Buy to Open;24.0;$16.08;8/11/15;;($140.90);72.0;
+10;FReversalSwing(SELL);Sell to Close;-72.0;$13.52;8/25/15;($194.26);($306.89);0.0;
+11;FReversalSwing(BUY);Buy to Open;25.0;$15.99;10/2/15;;($294.07);25.0;
+12;FReversalSwing(SELL);Sell to Close;-25.0;$15.41;10/8/15;($14.49);($321.37);0.0;
+13;FReversalSwing(BUY);Buy to Open;24.0;$16.25;3/13/17;;($317.41);24.0;
+14;FReversalSwing(SELL);Sell to Close;-24.0;$17.20;3/15/17;$22.90;($298.48);0.0;
+15;FReversalSwing(BUY);Buy to Open;18.0;$21.72;10/26/17;;($298.08);18.0;
+16;FReversalSwing(BUY);Buy to Open;18.0;$21.74;10/27/17;;($310.80);36.0;
+17;FReversalSwing(BUY);Buy to Open;18.0;$21.39;10/30/17;;($313.65);54.0;
+18;FReversalSwing(SELL);Sell to Close;-54.0;$21.93;12/12/17;$16.62;($281.86);0.0;
+19;FReversalSwing(BUY);Buy to Open;1.0;$276.37;1/28/22;;($276.11);1.0;
+20;FReversalSwing(BUY);Buy to Open;1.0;$282.12;1/31/22;;($215.86);2.0;
+21;FReversalSwing(BUY);Buy to Open;1.0;$286.67;2/14/22;;($251.25);3.0;
+22;FReversalSwing(SELL);Sell to Close;-3.0;$233.46;2/25/22;($144.76);($426.62);0.0;
+23;FReversalSwing(BUY);Buy to Open;1.0;$242.19;8/10/23;;($423.47);1.0;
+24;FReversalSwing(SELL);Sell to Close;-1.0;$238.70;8/14/23;($3.49);($430.11);0.0;
+25;FReversalSwing(BUY);Buy to Open;1.0;$219.57;10/16/24;;($428.35);1.0;
+26;FReversalSwing(SELL);Sell to Close;-1.0;$215.82;10/22/24;($3.75);($433.86);0.0;
+
+
+Max trade P/L: $38.40;
+
+Total P/L: ($433.86);
+
+Total order(s): 9;

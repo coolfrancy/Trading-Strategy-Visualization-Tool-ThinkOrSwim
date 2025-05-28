@@ -4,22 +4,38 @@
 {% endblock %}
 
 {% block body %}
-<body class="home">
-    <div class="page">
-        <h1 class="Tittle">    
-            Backtest Chart
+<body class="home bg-gray-200 min-h-screen" style="background-color: lightgrey">
+    <div class="page max-w-4xl mx-auto px-6 py-8">
+        <h1 class="font-bold text-center text-4xl md:text-5xl text-gray-800 mb-4">    
+            Backtest Chart Analyzer
         </h1>
-        <form class="user_file" method="POST" action="/clean_files"  enctype="multipart/form-data">
-            <input type="file" name="cfile" class='cfile' webkitdirectory multiple required><br><br>
-            <button class="sub_button">Submit</button>
+        
+        <!-- Description text -->
+        <div class="text-center mb-12">
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                A tool designed for the Thinkorswim platform that enables traders to visualize and analyze backtested data from multiple stocks simultaneously. Upload your backtest files and generate a comprehensive chart to identify patterns and optimize your trading strategies.
+            </p>
+        </div>
+        
+        <form class="user_file bg-white rounded-lg shadow-md p-8 mb-12" method="POST" action="/clean_files" enctype="multipart/form-data">
+            <div class="text-center">
+                <h3 class="text-xl font-semibold text-gray-700 mb-4">Upload Your Backtest Files</h3>
+                <input type="file" name="cfile" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-6" webkitdirectory multiple required>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200 shadow-md">
+                    Analyze Data
+                </button>
+            </div>
         </form>
-        <video width="500" height="400" class='video' controls>
-            <source src="static/tutorial.mov" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <h2 class="tutorial_title">
-            Tutorial ^
-        </h2>
+        
+        <div class="text-center">
+            <video width="500" height="400" class="mx-auto rounded-lg shadow-lg mb-4" controls>
+                <source src="static/tutorial.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2 class="text-lg font-medium text-gray-600">
+                How to Use Tutorial ↑
+            </h2>
+        </div>
     </div>
 </body>
 {% endblock %}

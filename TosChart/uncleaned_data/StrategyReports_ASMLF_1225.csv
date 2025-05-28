@@ -1,0 +1,23 @@
+Strategy report
+Symbol: ASMLF
+Work Time: 3/17/20 - 9/6/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;FReversalSwing(BUY);Buy to Open;1.0;$239.50;3/17/20;;($17.26);1.0;
+2;FReversalSwing(SELL);Sell to Close;-1.0;$207.54;3/19/20;($31.96);($31.96);0.0;
+3;FReversalSwing(BUY);Buy to Open;0.0;$665.00;8/14/23;;($31.96);0.0;
+4;FReversalSwing(BUY);Buy to Open;0.0;$651.76;8/16/23;;($31.96);0.0;
+5;FReversalSwing(BUY);Buy to Open;0.0;$652.75;8/17/23;;($31.96);0.0;
+6;FReversalSwing(SELL);Sell to Close;0.0;$597.80;9/18/23;$0.00;($31.96);0.0;
+7;FReversalSwing(BUY);Buy to Open;0.0;$928.00;7/19/24;;($31.96);0.0;
+8;FReversalSwing(BUY);Buy to Open;0.0;$896.00;7/22/24;;($31.96);0.0;
+9;FReversalSwing(BUY);Buy to Open;0.0;$931.25;7/24/24;;($31.96);0.0;
+10;FReversalSwing(SELL);Sell to Close;0.0;$775.34;9/6/24;$0.00;($31.96);0.0;
+
+
+Max trade P/L: $0.00;
+
+Total P/L: ($31.96);
+
+Total order(s): 3;

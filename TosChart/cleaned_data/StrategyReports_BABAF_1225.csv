@@ -1,0 +1,3 @@
+Symbol: BABAF Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
+1,FReversalSwing(BUY),Buy to Open,38.0,$10.45,12/3/24,,$9.50,38.0,
+2,FReversalSwing(SELL),Sell to Close,-38.0,$9.79,12/4/24,($25.08),($25.08),0.0,
