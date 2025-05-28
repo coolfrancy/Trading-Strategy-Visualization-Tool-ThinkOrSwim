@@ -1,15 +1,23 @@
-from flask import Flask, render_template, request, url_for, redirect
+from flask import Flask, render_template, request, url_for, redirect, session
+from dotenv import load_dotenv
 import sys
 import os
 
+load_dotenv()
 #path to TosChart for importing
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))  
 
 from TosChart.cleaner.cleaner import wash
 from TosChart.cleaner.erase import clean_folder
 from TosChart.visual import data
+from datetime import datetime, timedelta
 
 app=Flask(__name__)
+app.secret_key = os.getenv('app_secret_key')
+
+# Session configuration
+SESSION_TIMEOUT_MINUTES = 30  # 30 minutes timeout
+app.permanent_session_lifetime = timedelta(minutes=SESSION_TIMEOUT_MINUTES)
 
 #where the cleaned and uncleaned data is being stored
 
@@ -57,19 +65,23 @@ def clean_files():
     #clean files
     wash(uncleaned_data_path, cleaned_data_path)
 
+    #summary of files
+    try:
+        summary=data(cleaned_data_path)
+        session['summary'] = summary
+    except ValueError as e:
+        return f'No ThinkOrSwim csv file found : {e}'
+
     return redirect(url_for('chart'))
 
 @app.route('/chart')
 def chart():
-    try:
-        summary=data(cleaned_data_path)
-    except ValueError as e:
+    summary=session.get('summary')
+    if summary:
+        return render_template('chart.html', summary=summary)
+    else:
         return f'No ThinkOrSwim csv file found : {e}'
-    #deletes data from folder so prev data dont effect new chart
-    clean_folder(uncleaned_data_path)
-    clean_folder(cleaned_data_path)
-
-    return render_template('chart.html', summary=summary)
+        
 
     
 @app.errorhandler(500)
