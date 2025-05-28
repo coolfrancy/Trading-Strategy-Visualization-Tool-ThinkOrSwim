@@ -31,6 +31,7 @@ def home():
     #deletes data from folder so prev data dont effect new chart
     clean_folder(uncleaned_data_path)
     clean_folder(cleaned_data_path)
+    session.clear()
 
     return render_template('home.html')
 
@@ -58,6 +59,9 @@ def clean_files():
 
         #adds file to uncleaned_data folder
         os.makedirs(uncleaned_data_path, exist_ok=True)
+        # Create the cleaned data directory if it doesn't exist
+        os.makedirs(cleaned_data_path, exist_ok=True)
+
         file_name=os.path.basename(file.filename)
         file_path=os.path.join(uncleaned_data_path, file_name)
         file.save(file_path)
