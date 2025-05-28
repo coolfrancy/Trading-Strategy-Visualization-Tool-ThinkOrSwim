@@ -20,6 +20,10 @@ cleaned_data_path = os.path.join(os.getcwd(), 'TosChart', 'cleaned_data')
 #home page allows you to add files
 @app.route('/')
 def home():
+    #deletes data from folder so prev data dont effect new chart
+    clean_folder(uncleaned_data_path)
+    clean_folder(cleaned_data_path)
+
     return render_template('home.html')
 
 #shows chart
@@ -28,6 +32,7 @@ def clean_files():
     #deletes data from folder so prev data dont effect new chart
     clean_folder(uncleaned_data_path)
     clean_folder(cleaned_data_path)
+
 
     #to make sure the user imported a file
     if 'cfile' not in request.files:
@@ -48,7 +53,7 @@ def clean_files():
         file_name=os.path.basename(file.filename)
         file_path=os.path.join(uncleaned_data_path, file_name)
         file.save(file_path)
-    
+
     #clean files
     wash(uncleaned_data_path, cleaned_data_path)
 
@@ -60,6 +65,9 @@ def chart():
         summary=data(cleaned_data_path)
     except ValueError as e:
         return f'No ThinkOrSwim csv file found : {e}'
+    #deletes data from folder so prev data dont effect new chart
+    clean_folder(uncleaned_data_path)
+    clean_folder(cleaned_data_path)
 
     return render_template('chart.html', summary=summary)
 
