@@ -66,7 +66,7 @@ def chart():
     
 @app.errorhandler(500)
 def internal_error(error):
-    return "Something went wrong. Please try again.", 500
+    return "Something went wrong, Please try again.", 500
 
 @app.errorhandler(404)
 def not_found_error(error):
