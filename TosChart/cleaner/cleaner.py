@@ -4,6 +4,9 @@ def wash(uncleaned_data_path, cleaned_data_path):
     
     files=os.listdir(uncleaned_data_path)
 
+    # Create the cleaned data directory if it doesn't exist
+    os.makedirs(cleaned_data_path, exist_ok=True)
+
     # Loop through each file
     for strat in files:
         try:
