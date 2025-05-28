@@ -8,7 +8,7 @@ def clean_folder(folder_path):
             os.remove(file_path)
 
     except FileNotFoundError:
-        continue
+        return 'file not found: but ok'
 
 
 if __name__=='__main__':
