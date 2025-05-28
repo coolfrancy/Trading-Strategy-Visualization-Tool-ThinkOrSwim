@@ -1,0 +1,102 @@
+Strategy report
+Symbol: NSRGF
+Work Time: 2/8/10 - 5/26/23
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;FReversalSwing(BUY);Buy to Open;8.0;$45.50;2/8/10;;$0.40;8.0;
+2;FReversalSwing(BUY);Buy to Open;8.0;$45.55;2/9/10;;$10.00;16.0;
+3;FReversalSwing(BUY);Buy to Open;8.0;$45.80;2/11/10;;$26.00;24.0;
+4;FReversalSwing(SELL);Sell to Close;-24.0;$48.85;2/22/10;$77.60;$77.60;0.0;
+5;FReversalSwing(BUY);Buy to Open;8.0;$48.45;4/20/10;;$81.20;8.0;
+6;FReversalSwing(BUY);Buy to Open;8.0;$48.57;4/22/10;;$90.24;16.0;
+7;FReversalSwing(BUY);Buy to Open;8.0;$47.76;4/29/10;;$89.12;24.0;
+8;FReversalSwing(SELL);Sell to Close;-24.0;$47.45;6/11/10;($19.44);$58.16;0.0;
+9;FReversalSwing(BUY);Buy to Open;7.0;$55.50;1/7/11;;$59.28;7.0;
+10;FReversalSwing(BUY);Buy to Open;7.0;$55.66;1/10/11;;$55.08;14.0;
+11;FReversalSwing(BUY);Buy to Open;7.0;$55.36;1/11/11;;$50.67;21.0;
+12;FReversalSwing(SELL);Sell to Close;-21.0;$55.55;2/18/11;$0.91;$59.07;0.0;
+13;FReversalSwing(BUY);Buy to Open;7.0;$53.80;3/16/11;;$59.07;7.0;
+14;FReversalSwing(BUY);Buy to Open;7.0;$53.80;3/17/11;;$77.27;14.0;
+15;FReversalSwing(SELL);Sell to Close;-14.0;$56.25;3/22/11;$34.30;$93.37;0.0;
+16;FReversalSwing(BUY);Buy to Open;6.0;$60.05;8/9/11;;$115.87;6.0;
+17;FReversalSwing(SELL);Sell to Close;-6.0;$64.20;8/18/11;$24.90;$118.27;0.0;
+18;FReversalSwing(BUY);Buy to Open;6.0;$59.65;5/9/12;;$114.97;6.0;
+19;FReversalSwing(BUY);Buy to Open;6.0;$59.10;5/10/12;;$115.54;12.0;
+20;FReversalSwing(BUY);Buy to Open;6.0;$59.15;5/11/12;;$123.69;18.0;
+21;FReversalSwing(SELL);Sell to Close;-18.0;$58.54;5/15/12;($13.76);$104.52;0.0;
+22;FReversalSwing(BUY);Buy to Open;6.0;$63.20;11/2/12;;$103.62;6.0;
+23;FReversalSwing(BUY);Buy to Open;6.0;$63.05;11/5/12;;$103.62;12.0;
+24;FReversalSwing(BUY);Buy to Open;6.0;$63.05;11/6/12;;$106.86;18.0;
+25;FReversalSwing(SELL);Sell to Close;-18.0;$64.50;11/26/12;$25.20;$129.72;0.0;
+26;FReversalSwing(BUY);Buy to Open;5.0;$69.24;4/18/13;;$131.78;5.0;
+27;FReversalSwing(BUY);Buy to Open;5.0;$68.30;5/23/13;;$119.03;10.0;
+28;FReversalSwing(BUY);Buy to Open;5.0;$67.70;5/24/13;;$124.28;15.0;
+29;FReversalSwing(SELL);Sell to Close;-15.0;$67.30;7/12/13;($16.69);$113.03;0.0;
+30;FReversalSwing(BUY);Buy to Open;5.0;$70.93;12/16/13;;$113.98;5.0;
+31;FReversalSwing(SELL);Sell to Close;-5.0;$72.89;12/27/13;$9.80;$122.83;0.0;
+32;FReversalSwing(BUY);Buy to Open;5.0;$71.61;2/5/14;;$124.77;5.0;
+33;FReversalSwing(SELL);Sell to Close;-5.0;$75.29;2/10/14;$18.39;$141.22;0.0;
+34;FReversalSwing(BUY);Buy to Open;5.0;$72.92;3/20/14;;$140.87;5.0;
+35;FReversalSwing(BUY);Buy to Open;5.0;$72.85;3/21/14;;$146.97;10.0;
+36;FReversalSwing(SELL);Sell to Close;-10.0;$74.89;3/31/14;$20.05;$161.27;0.0;
+37;FReversalSwing(BUY);Buy to Open;5.0;$75.77;7/30/14;;$157.42;5.0;
+38;FReversalSwing(BUY);Buy to Open;5.0;$75.00;7/31/14;;$150.69;10.0;
+39;FReversalSwing(SELL);Sell to Close;-10.0;$76.84;8/15/14;$14.54;$175.81;0.0;
+40;FReversalSwing(BUY);Buy to Open;5.0;$75.84;6/5/15;;$168.81;5.0;
+41;FReversalSwing(SELL);Sell to Close;-5.0;$74.78;6/8/15;($5.30);$170.51;0.0;
+42;FReversalSwing(BUY);Buy to Open;5.0;$76.97;10/10/16;;$170.36;5.0;
+43;FReversalSwing(BUY);Buy to Open;5.0;$76.94;10/11/16;;$162.77;10.0;
+44;FReversalSwing(BUY);Buy to Open;5.0;$76.18;10/12/16;;$157.20;15.0;
+45;FReversalSwing(SELL);Sell to Close;-15.0;$75.34;10/14/16;($20.41);$150.10;0.0;
+46;FReversalSwing(BUY);Buy to Open;5.0;$76.00;10/17/16;;$146.20;5.0;
+47;FReversalSwing(SELL);Sell to Close;-5.0;$75.55;10/18/16;($2.25);$147.85;0.0;
+48;FReversalSwing(BUY);Buy to Open;5.0;$75.68;10/19/16;;$145.70;5.0;
+49;FReversalSwing(SELL);Sell to Close;-5.0;$75.45;10/20/16;($1.15);$146.70;0.0;
+50;FReversalSwing(BUY);Buy to Open;4.0;$83.81;8/14/17;;$150.26;4.0;
+51;FReversalSwing(SELL);Sell to Close;-4.0;$85.50;9/11/17;$6.76;$153.46;0.0;
+52;FReversalSwing(BUY);Buy to Open;4.0;$83.17;9/22/17;;$152.90;4.0;
+53;FReversalSwing(BUY);Buy to Open;4.0;$83.03;9/25/17;;$157.72;8.0;
+54;FReversalSwing(SELL);Sell to Close;-8.0;$85.31;9/27/17;$17.68;$171.14;0.0;
+55;FReversalSwing(BUY);Buy to Open;4.0;$82.20;10/26/17;;$174.18;4.0;
+56;FReversalSwing(BUY);Buy to Open;4.0;$82.96;10/27/17;;$169.46;8.0;
+57;FReversalSwing(BUY);Buy to Open;4.0;$82.37;10/30/17;;$176.54;12.0;
+58;FReversalSwing(SELL);Sell to Close;-12.0;$85.27;11/20/17;$33.12;$204.26;0.0;
+59;FReversalSwing(BUY);Buy to Open;4.0;$83.90;12/21/17;;$206.08;4.0;
+60;FReversalSwing(SELL);Sell to Close;-4.0;$85.93;1/10/18;$8.14;$212.40;0.0;
+61;FReversalSwing(BUY);Buy to Open;3.0;$105.84;9/17/19;;$216.72;3.0;
+62;FReversalSwing(BUY);Buy to Open;3.0;$105.38;10/3/19;;$211.74;6.0;
+63;FReversalSwing(BUY);Buy to Open;3.0;$105.50;10/4/19;;$231.18;9.0;
+64;FReversalSwing(SELL);Sell to Close;-9.0;$106.11;12/13/19;$4.83;$217.23;0.0;
+65;FReversalSwing(BUY);Buy to Open;3.0;$107.09;2/14/20;;$225.66;3.0;
+66;FReversalSwing(SELL);Sell to Close;-3.0;$111.20;2/24/20;$12.33;$229.56;0.0;
+67;FReversalSwing(BUY);Buy to Open;3.0;$106.25;2/27/20;;$220.26;3.0;
+68;FReversalSwing(SELL);Sell to Close;-3.0;$110.65;3/5/20;$13.20;$242.76;0.0;
+69;FReversalSwing(BUY);Buy to Open;3.0;$116.48;9/25/20;;$250.32;3.0;
+70;FReversalSwing(SELL);Sell to Close;-3.0;$120.53;10/13/20;$12.14;$254.89;0.0;
+71;FReversalSwing(BUY);Buy to Open;3.0;$113.94;10/29/20;;$254.20;3.0;
+72;FReversalSwing(BUY);Buy to Open;3.0;$113.71;10/30/20;;$244.69;6.0;
+73;FReversalSwing(BUY);Buy to Open;3.0;$112.13;11/2/20;;$268.32;9.0;
+74;FReversalSwing(SELL);Sell to Close;-9.0;$116.20;12/18/20;$26.48;$281.37;0.0;
+75;FReversalSwing(BUY);Buy to Open;3.0;$121.80;8/10/21;;$290.22;3.0;
+76;FReversalSwing(SELL);Sell to Close;-3.0;$128.00;8/20/21;$18.60;$299.97;0.0;
+77;FReversalSwing(BUY);Buy to Open;3.0;$123.04;9/16/21;;$302.25;3.0;
+78;FReversalSwing(BUY);Buy to Open;3.0;$123.00;9/20/21;;$296.20;6.0;
+79;FReversalSwing(BUY);Buy to Open;3.0;$122.39;9/21/21;;$309.59;9.0;
+80;FReversalSwing(SELL);Sell to Close;-9.0;$124.60;10/15/21;$16.08;$316.04;0.0;
+81;FReversalSwing(BUY);Buy to Open;3.0;$127.57;12/2/21;;$318.77;3.0;
+82;FReversalSwing(SELL);Sell to Close;-3.0;$134.82;12/9/21;$21.76;$337.81;0.0;
+83;FReversalSwing(BUY);Buy to Open;3.0;$130.38;1/12/22;;$347.01;3.0;
+84;FReversalSwing(BUY);Buy to Open;3.0;$129.00;1/25/22;;$334.41;6.0;
+85;FReversalSwing(BUY);Buy to Open;3.0;$129.13;1/26/22;;$322.03;9.0;
+86;FReversalSwing(SELL);Sell to Close;-9.0;$121.71;2/25/22;($70.13);$267.67;0.0;
+87;FReversalSwing(BUY);Buy to Open;3.0;$124.49;5/24/23;;$266.27;3.0;
+88;FReversalSwing(BUY);Buy to Open;3.0;$124.03;5/25/23;;$251.93;6.0;
+89;FReversalSwing(SELL);Sell to Close;-6.0;$122.02;5/26/23;($13.46);$254.21;0.0;
+
+
+Max trade P/L: $77.60;
+
+Total P/L: $254.21;
+
+Total order(s): 30;

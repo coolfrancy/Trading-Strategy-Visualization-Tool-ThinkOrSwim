@@ -83,7 +83,10 @@ def data(cleaned_data_path):
     # Set the background color to light grey
     plt.gca().set_facecolor('lightgrey')  # Chart area background
     plt.gcf().patch.set_facecolor('lightgrey')  # Figure background
-    
+
+    # Format y-axis to show dollar signs
+    plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'${x:,.0f}'))
+
     plt.show()
     plt.savefig(chart_path)
 
