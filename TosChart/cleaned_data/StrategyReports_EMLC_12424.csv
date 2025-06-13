@@ -1,3 +1,0 @@
-Symbol: EMLC Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
-1,keepbusy_cross(Buy),Buy to Open,25.0,$39.20,4/2/18,,($8.50),25.0,
-2,keepbusy_cross(SELL),Sell to Close,-25.0,$38.93,4/3/18,($6.65),($6.65),0.0,
