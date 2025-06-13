@@ -1,0 +1,31 @@
+Strategy report
+Symbol: ANET
+Work Time: 3/9/18 - 11/18/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;54.0;$18.36;3/9/18;;$4.66;54.0;
+2;keepbusy_cross(SELL);Sell to Close;-54.0;$16.81;3/26/18;($83.52);($83.52);0.0;
+3;keepbusy_cross(Buy);Buy to Open;56.0;$17.66;8/24/18;;$7.37;56.0;
+4;keepbusy_cross(SELL);Sell to Close;-56.0;$17.08;9/6/18;($32.92);($116.44);0.0;
+5;keepbusy_cross(Buy);Buy to Open;62.0;$16.06;11/6/20;;($93.19);62.0;
+6;keepbusy_cross(SELL);Sell to Close;-62.0;$18.57;2/23/21;$155.53;$39.09;0.0;
+7;keepbusy_cross(Buy);Buy to Open;50.0;$19.87;5/14/21;;$65.65;50.0;
+8;keepbusy_cross(SELL);Sell to Close;-50.0;$22.72;8/16/21;$142.65;$181.74;0.0;
+9;keepbusy_cross(Buy);Buy to Open;32.0;$30.56;11/4/22;;$252.30;32.0;
+10;keepbusy_cross(SELL);Sell to Close;-32.0;$30.56;12/19/22;($0.18);$181.56;0.0;
+11;keepbusy_cross(Buy);Buy to Open;22.0;$44.44;8/4/23;;$191.68;22.0;
+12;keepbusy_cross(SELL);Sell to Close;-22.0;$44.48;9/27/23;$0.95;$182.51;0.0;
+13;keepbusy_cross(Buy);Buy to Open;18.0;$52.92;11/3/23;;$186.15;18.0;
+14;keepbusy_cross(SELL);Sell to Close;-18.0;$69.64;4/15/24;$300.90;$483.40;0.0;
+15;keepbusy_cross(Buy);Buy to Open;12.0;$82.92;6/14/24;;$473.89;12.0;
+16;keepbusy_cross(SELL);Sell to Close;-12.0;$80.39;7/26/24;($30.31);$453.09;0.0;
+17;keepbusy_cross(Buy);Buy to Open;10.0;$94.83;9/20/24;;$465.94;10.0;
+18;keepbusy_cross(SELL);Sell to Close;-10.0;$95.05;11/18/24;$2.18;$455.28;0.0;
+
+
+Max trade P/L: $300.90;
+
+Total P/L: $455.28;
+
+Total order(s): 9;

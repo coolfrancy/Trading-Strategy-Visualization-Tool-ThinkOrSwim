@@ -1,0 +1,15 @@
+Strategy report
+Symbol: JXN
+Work Time: 8/16/24 - 9/11/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;11.0;$87.48;8/16/24;;$23.54;11.0;
+2;keepbusy_cross(SELL);Sell to Close;-11.0;$80.57;9/11/24;($76.02);($76.02);0.0;
+
+
+Max trade P/L: ($76.02);
+
+Total P/L: ($76.02);
+
+Total order(s): 1;

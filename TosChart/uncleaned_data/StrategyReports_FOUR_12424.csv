@@ -1,0 +1,16 @@
+Strategy report
+Symbol: FOUR
+Work Time: 11/17/23 - 8/16/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;15.0;$64.34;11/17/23;;$4.50;15.0;
+2;keepbusy_cross(SELL);Sell to Close;-15.0;$72.41;2/22/24;$121.06;$121.06;0.0;
+3;keepbusy_cross(Buy);Buy to Open;12.0;$81.87;8/16/24;;$116.50;12.0;
+
+
+Max trade P/L: $121.06;
+
+Total P/L: $121.06;
+
+Total order(s): 1;

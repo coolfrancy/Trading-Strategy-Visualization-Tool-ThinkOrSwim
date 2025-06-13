@@ -1,0 +1,29 @@
+Strategy report
+Symbol: VEU
+Work Time: 3/4/11 - 7/25/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;20.0;$49.81;3/4/11;;($4.80);20.0;
+2;keepbusy_cross(SELL);Sell to Close;-20.0;$48.40;3/11/11;($28.13);($28.13);0.0;
+3;keepbusy_cross(Buy);Buy to Open;19.0;$50.86;4/25/11;;($30.22);19.0;
+4;keepbusy_cross(SELL);Sell to Close;-19.0;$49.44;5/13/11;($27.04);($55.17);0.0;
+5;keepbusy_cross(Buy);Buy to Open;22.0;$44.05;11/30/12;;($54.73);22.0;
+6;keepbusy_cross(SELL);Sell to Close;-22.0;$45.83;2/22/13;$39.13;($16.04);0.0;
+7;keepbusy_cross(Buy);Buy to Open;20.0;$47.99;9/13/13;;($11.62);20.0;
+8;keepbusy_cross(SELL);Sell to Close;-20.0;$49.57;12/4/13;$31.58;$15.55;0.0;
+9;keepbusy_cross(Buy);Buy to Open;22.0;$45.26;1/9/17;;$14.45;22.0;
+10;keepbusy_cross(SELL);Sell to Close;-22.0;$49.68;7/7/17;$97.32;$112.86;0.0;
+11;keepbusy_cross(Buy);Buy to Open;18.0;$52.97;11/6/20;;$115.56;18.0;
+12;keepbusy_cross(SELL);Sell to Close;-18.0;$59.70;3/1/21;$121.23;$234.09;0.0;
+13;keepbusy_cross(Buy);Buy to Open;16.0;$59.25;5/10/24;;$235.69;16.0;
+14;keepbusy_cross(SELL);Sell to Close;-16.0;$58.60;6/17/24;($10.40);$223.69;0.0;
+15;keepbusy_cross(Buy);Buy to Open;16.0;$60.63;7/12/24;;$232.17;16.0;
+16;keepbusy_cross(SELL);Sell to Close;-16.0;$59.42;7/25/24;($19.36);$204.33;0.0;
+
+
+Max trade P/L: $121.23;
+
+Total P/L: $204.33;
+
+Total order(s): 8;

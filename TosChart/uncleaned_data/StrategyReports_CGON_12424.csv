@@ -1,0 +1,15 @@
+Strategy report
+Symbol: CGON
+Work Time: 11/8/24 - 11/13/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;25.0;$39.06;11/8/24;;$22.00;25.0;
+2;keepbusy_cross(SELL);Sell to Close;-25.0;$36.81;11/13/24;($56.30);($56.30);0.0;
+
+
+Max trade P/L: ($56.30);
+
+Total P/L: ($56.30);
+
+Total order(s): 1;

@@ -1,0 +1,15 @@
+Strategy report
+Symbol: GTLB
+Work Time: 9/9/24 - 10/2/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;18.0;$53.09;9/9/24;;$7.38;18.0;
+2;keepbusy_cross(SELL);Sell to Close;-18.0;$49.77;10/2/24;($59.81);($59.81);0.0;
+
+
+Max trade P/L: ($59.81);
+
+Total P/L: ($59.81);
+
+Total order(s): 1;

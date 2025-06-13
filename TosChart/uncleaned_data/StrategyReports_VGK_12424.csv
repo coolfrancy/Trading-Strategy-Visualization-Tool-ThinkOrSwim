@@ -1,0 +1,29 @@
+Strategy report
+Symbol: VGK
+Work Time: 1/23/12 - 6/17/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;23.0;$43.47;1/23/12;;$7.13;23.0;
+2;keepbusy_cross(SELL);Sell to Close;-23.0;$44.88;4/5/12;$32.43;$32.43;0.0;
+3;keepbusy_cross(Buy);Buy to Open;21.0;$47.18;11/30/12;;$32.85;21.0;
+4;keepbusy_cross(SELL);Sell to Close;-21.0;$49.17;2/22/13;$41.77;$74.20;0.0;
+5;keepbusy_cross(Buy);Buy to Open;17.0;$58.35;12/30/13;;$78.45;17.0;
+6;keepbusy_cross(SELL);Sell to Close;-17.0;$57.13;1/28/14;($20.67);$53.52;0.0;
+7;keepbusy_cross(Buy);Buy to Open;18.0;$54.80;10/18/19;;$54.60;18.0;
+8;keepbusy_cross(SELL);Sell to Close;-18.0;$57.17;1/28/20;$42.66;$96.18;0.0;
+9;keepbusy_cross(Buy);Buy to Open;17.0;$56.08;11/13/20;;$111.14;17.0;
+10;keepbusy_cross(SELL);Sell to Close;-17.0;$61.15;3/1/21;$86.22;$182.40;0.0;
+11;keepbusy_cross(Buy);Buy to Open;15.0;$63.68;3/12/21;;$181.80;15.0;
+12;keepbusy_cross(SELL);Sell to Close;-15.0;$61.93;3/26/21;($26.25);$156.15;0.0;
+13;keepbusy_cross(Buy);Buy to Open;16.0;$61.57;4/10/23;;$156.15;16.0;
+14;keepbusy_cross(SELL);Sell to Close;-16.0;$61.32;5/25/23;($4.08);$152.07;0.0;
+15;keepbusy_cross(Buy);Buy to Open;14.0;$68.62;5/10/24;;$156.41;14.0;
+16;keepbusy_cross(SELL);Sell to Close;-14.0;$67.55;6/17/24;($14.98);$137.09;0.0;
+
+
+Max trade P/L: $86.22;
+
+Total P/L: $137.09;
+
+Total order(s): 8;
