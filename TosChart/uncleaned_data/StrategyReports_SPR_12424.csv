@@ -1,0 +1,23 @@
+Strategy report
+Symbol: SPR
+Work Time: 10/8/10 - 10/10/18
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;47.0;$21.06;10/8/10;;$23.97;47.0;
+2;keepbusy_cross(SELL);Sell to Close;-47.0;$20.31;11/3/10;($35.04);($35.04);0.0;
+3;keepbusy_cross(Buy);Buy to Open;22.0;$45.18;1/30/15;;($38.12);22.0;
+4;keepbusy_cross(SELL);Sell to Close;-22.0;$50.83;4/30/15;$124.35;$89.31;0.0;
+5;keepbusy_cross(Buy);Buy to Open;18.0;$53.37;11/20/15;;$92.91;18.0;
+6;keepbusy_cross(SELL);Sell to Close;-18.0;$52.58;11/25/15;($14.17);$75.14;0.0;
+7;keepbusy_cross(Buy);Buy to Open;11.0;$90.10;7/20/18;;$71.29;11.0;
+8;keepbusy_cross(SELL);Sell to Close;-11.0;$86.98;8/3/18;($34.36);$40.78;0.0;
+9;keepbusy_cross(Buy);Buy to Open;10.0;$93.11;9/21/18;;$44.68;10.0;
+10;keepbusy_cross(SELL);Sell to Close;-10.0;$88.70;10/10/18;($44.07);($3.30);0.0;
+
+
+Max trade P/L: $124.35;
+
+Total P/L: ($3.30);
+
+Total order(s): 5;

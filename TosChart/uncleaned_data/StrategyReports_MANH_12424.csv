@@ -1,0 +1,27 @@
+Strategy report
+Symbol: MANH
+Work Time: 4/12/04 - 5/5/16
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;132.0;$7.55;4/12/04;;$13.20;132.0;
+2;keepbusy_cross(SELL);Sell to Close;-132.0;$7.21;4/27/04;($45.50);($45.50);0.0;
+3;keepbusy_cross(Buy);Buy to Open;188.0;$5.31;8/4/06;;($42.21);188.0;
+4;keepbusy_cross(SELL);Sell to Close;-188.0;$7.17;1/5/07;$350.37;$304.87;0.0;
+5;keepbusy_cross(Buy);Buy to Open;134.0;$7.45;9/21/07;;$293.15;134.0;
+6;keepbusy_cross(SELL);Sell to Close;-134.0;$7.07;9/25/07;($51.12);$253.75;0.0;
+7;keepbusy_cross(Buy);Buy to Open;122.0;$8.19;4/1/11;;$269.00;122.0;
+8;keepbusy_cross(SELL);Sell to Close;-122.0;$8.53;6/7/11;$41.71;$295.46;0.0;
+9;keepbusy_cross(Buy);Buy to Open;105.0;$9.46;7/22/11;;$286.53;105.0;
+10;keepbusy_cross(SELL);Sell to Close;-105.0;$8.67;8/8/11;($83.42);$212.04;0.0;
+11;keepbusy_cross(Buy);Buy to Open;108.0;$9.25;10/14/11;;$220.95;108.0;
+12;keepbusy_cross(SELL);Sell to Close;-108.0;$10.34;12/23/11;$117.72;$329.76;0.0;
+13;keepbusy_cross(Buy);Buy to Open;14.0;$67.60;4/22/16;;$309.04;14.0;
+14;keepbusy_cross(SELL);Sell to Close;-14.0;$58.82;5/5/16;($122.87);$206.88;0.0;
+
+
+Max trade P/L: $350.37;
+
+Total P/L: $206.88;
+
+Total order(s): 7;

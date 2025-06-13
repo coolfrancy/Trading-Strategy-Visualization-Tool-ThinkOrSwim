@@ -31,24 +31,24 @@ def Summary(count_win:int, count_loss:int, win_percentage:float, win_loss_ratio:
         if expected_value > 0.3:
             summary = "🟢 HIGHLY PROFITABLE STRATEGY\n\n"
             summary += f"Your strategy shows excellent profitability with a {win_percentage}% win rate and {win_loss_ratio}:1 win/loss ratio. "
-            summary += f"The expected value of +{expected_value * 100:.2f}% per trade indicates strong performance. "
+            summary += f"An expected value of +${expected_value:.2f} profit per $1 risked indicates strong performance. "
             summary += "This combination suggests a well-balanced approach with consistent positive returns."
             
         elif expected_value > 0.1:
             summary = "🟡 MODERATELY PROFITABLE STRATEGY\n\n"
             summary += f"Your strategy is profitable with a {win_percentage}% win rate and {win_loss_ratio}:1 win/loss ratio. "
-            summary += f"The expected value of +{expected_value * 100:.2f}% per trade shows positive returns, though there's room for optimization. "
+            summary += f"An expected value of +${expected_value :.2f} profit per $1 risked shows positive returns, though there's room for optimization. "
             
         else:
             summary = "🟡 MARGINALLY PROFITABLE STRATEGY\n\n"
             summary += f"Your strategy is barely profitable with a {win_percentage}% win rate and {win_loss_ratio}:1 win/loss ratio. "
-            summary += f"The low expected value of +{expected_value * 100:.2f}% per trade suggests minimal edge. "
+            summary += f"The low expected value of +${expected_value :.2f} profit per $1 risked suggests minimal edge. "
             summary += "Small changes in market conditions or execution could easily turn this unprofitable."
             
     elif expected_value == 0:
         profitability_status = "BREAK-EVEN"
         summary = "⚪ BREAK-EVEN STRATEGY\n\n"
-        summary += f"Your strategy breaks even with a {win_percentage}% win rate and {win_loss_ratio}:1 win/loss ratio. "
+        summary += f"Your strategy breaks even with a {win_percentage} win rate and {win_loss_ratio}:1 win/loss ratio. "
         summary += "While you're not losing money, you're also not generating profits after accounting for wins and losses. "
         summary += "Consider strategy refinements to tip the balance toward profitability."
         
@@ -58,13 +58,13 @@ def Summary(count_win:int, count_loss:int, win_percentage:float, win_loss_ratio:
         if expected_value < -0.2:
             summary = "🔴 HIGHLY UNPROFITABLE STRATEGY\n\n"
             summary += f"Your strategy is losing money significantly with a {win_percentage}% win rate and {win_loss_ratio}:1 win/loss ratio. "
-            summary += f"The expected value of {expected_value * 100:.2f}% per trade indicates substantial losses over time. "
+            summary += f"An expected value of ${expected_value :.2f} profit per $1 risked indicates substantial losses over time. "
             summary += "This strategy requires major revision or should be abandoned."
             
         else:
             summary = "🔴 UNPROFITABLE STRATEGY\n\n"
             summary += f"Your strategy is losing money with a {win_percentage}% win rate and {win_loss_ratio}:1 win/loss ratio. "
-            summary += f"The expected value of {expected_value * 100:.2f}% per trade shows negative returns. "
+            summary += f"An expected value of ${expected_value :.2f} profit per $1 risked shows negative returns. "
             summary += "You need to either increase your win rate or improve your win/loss ratio to achieve profitability."
     
     # Additional insights
@@ -73,7 +73,7 @@ def Summary(count_win:int, count_loss:int, win_percentage:float, win_loss_ratio:
     summary += f"• Total Losers: {count_loss}\n"
     summary += f"• Win Rate: {win_percentage}%\n"
     summary += f"• Win/Loss Ratio: {win_loss_ratio}:1\n"
-    summary += f"• Expected Value: {'+' if expected_value > 0 else ''}{expected_value * 100:.2f}% per trade\n"
+    summary += f"• Expected Value: {'+$' if expected_value > 0 else '%'}{expected_value :.2f} profit for every $1 risked\n"
     summary += f"• Break-even Ratio Needed: {break_even_ratio:.2f}:1\n"
     
     # Insight

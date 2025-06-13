@@ -1,0 +1,7 @@
+Symbol: GMS Id,Strategy,Side,Amount,Price,Date/Time,Trade P/L,P/L,Position,
+1,keepbusy_cross(Buy),Buy to Open,35.0,$27.98,11/13/20,,$29.40,35.0,
+2,keepbusy_cross(SELL),Sell to Close,-35.0,$29.82,1/28/21,$64.40,$64.40,0.0,
+3,keepbusy_cross(Buy),Buy to Open,18.0,$55.30,11/5/21,,$112.28,18.0,
+4,keepbusy_cross(SELL),Sell to Close,-18.0,$52.85,12/21/21,($44.12),$20.28,0.0,
+5,keepbusy_cross(Buy),Buy to Open,19.0,$50.53,11/11/22,,$20.28,19.0,
+6,keepbusy_cross(SELL),Sell to Close,-19.0,$47.23,12/1/22,($62.64),($42.36),0.0,

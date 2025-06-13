@@ -1,0 +1,27 @@
+Strategy report
+Symbol: BATRK
+Work Time: 5/11/18 - 8/6/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;42.0;$23.61;5/11/18;;$9.66;42.0;
+2;keepbusy_cross(SELL);Sell to Close;-42.0;$25.10;7/25/18;$62.51;$62.51;0.0;
+3;keepbusy_cross(Buy);Buy to Open;37.0;$26.75;9/28/18;;$81.01;37.0;
+4;keepbusy_cross(SELL);Sell to Close;-37.0;$25.87;10/8/18;($32.45);$30.06;0.0;
+5;keepbusy_cross(Buy);Buy to Open;34.0;$29.41;11/1/19;;$35.84;34.0;
+6;keepbusy_cross(SELL);Sell to Close;-34.0;$28.28;11/13/19;($38.55);($8.49);0.0;
+7;keepbusy_cross(Buy);Buy to Open;34.0;$29.04;12/13/19;;($6.45);34.0;
+8;keepbusy_cross(SELL);Sell to Close;-34.0;$28.45;1/13/20;($20.14);($28.63);0.0;
+9;keepbusy_cross(Buy);Buy to Open;26.0;$38.38;12/15/23;;($35.13);26.0;
+10;keepbusy_cross(SELL);Sell to Close;-26.0;$39.04;2/23/24;$17.10;($11.52);0.0;
+11;keepbusy_cross(Buy);Buy to Open;25.0;$39.97;6/3/24;;($4.52);25.0;
+12;keepbusy_cross(SELL);Sell to Close;-25.0;$39.06;6/20/24;($22.72);($34.25);0.0;
+13;keepbusy_cross(Buy);Buy to Open;24.0;$40.14;7/8/24;;($16.01);24.0;
+14;keepbusy_cross(SELL);Sell to Close;-24.0;$40.34;8/6/24;$4.92;($29.33);0.0;
+
+
+Max trade P/L: $62.51;
+
+Total P/L: ($29.33);
+
+Total order(s): 7;

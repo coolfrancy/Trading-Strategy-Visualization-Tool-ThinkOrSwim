@@ -1,0 +1,31 @@
+Strategy report
+Symbol: CRH
+Work Time: 8/17/01 - 1/24/22
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;53.0;$18.71;8/17/01;;($24.38);53.0;
+2;keepbusy_cross(SELL);Sell to Close;-53.0;$17.57;8/29/01;($60.34);($60.34);0.0;
+3;keepbusy_cross(Buy);Buy to Open;43.0;$23.20;3/20/09;;($57.76);43.0;
+4;keepbusy_cross(SELL);Sell to Close;-43.0;$21.99;3/25/09;($52.03);($112.37);0.0;
+5;keepbusy_cross(Buy);Buy to Open;39.0;$25.39;7/24/09;;($124.85);39.0;
+6;keepbusy_cross(SELL);Sell to Close;-39.0;$23.93;7/29/09;($56.79);($169.16);0.0;
+7;keepbusy_cross(Buy);Buy to Open;35.0;$28.40;4/4/14;;($143.96);35.0;
+8;keepbusy_cross(SELL);Sell to Close;-35.0;$28.50;5/8/14;$3.49;($165.67);0.0;
+9;keepbusy_cross(Buy);Buy to Open;34.0;$29.26;6/19/15;;($159.89);34.0;
+10;keepbusy_cross(SELL);Sell to Close;-34.0;$28.21;6/30/15;($35.73);($201.40);0.0;
+11;keepbusy_cross(Buy);Buy to Open;28.0;$35.59;4/27/18;;($200.00);28.0;
+12;keepbusy_cross(SELL);Sell to Close;-28.0;$35.19;5/2/18;($11.26);($212.66);0.0;
+13;keepbusy_cross(Buy);Buy to Open;25.0;$39.80;10/9/20;;($219.41);25.0;
+14;keepbusy_cross(SELL);Sell to Close;-25.0;$37.29;10/16/20;($62.75);($275.41);0.0;
+15;keepbusy_cross(Buy);Buy to Open;21.0;$46.28;3/5/21;;($270.37);21.0;
+16;keepbusy_cross(SELL);Sell to Close;-21.0;$44.65;3/24/21;($34.22);($309.63);0.0;
+17;keepbusy_cross(Buy);Buy to Open;19.0;$51.59;12/27/21;;($291.96);19.0;
+18;keepbusy_cross(SELL);Sell to Close;-19.0;$50.82;1/24/22;($14.66);($324.29);0.0;
+
+
+Max trade P/L: $3.49;
+
+Total P/L: ($324.29);
+
+Total order(s): 9;

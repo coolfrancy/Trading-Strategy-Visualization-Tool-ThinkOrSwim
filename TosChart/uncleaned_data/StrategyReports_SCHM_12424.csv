@@ -1,0 +1,18 @@
+Strategy report
+Symbol: SCHM
+Work Time: 2/6/15 - 9/20/24
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;71.0;$13.92;2/6/15;;($2.84);71.0;
+2;keepbusy_cross(SELL);Sell to Close;-71.0;$14.30;5/1/15;$26.87;$26.87;0.0;
+3;keepbusy_cross(Buy);Buy to Open;43.0;$23.05;6/9/23;;$21.71;43.0;
+4;keepbusy_cross(SELL);Sell to Close;-43.0;$22.72;6/26/23;($14.13);$12.74;0.0;
+5;keepbusy_cross(Buy);Buy to Open;36.0;$27.68;9/20/24;;$8.78;36.0;
+
+
+Max trade P/L: $26.87;
+
+Total P/L: $12.74;
+
+Total order(s): 2;

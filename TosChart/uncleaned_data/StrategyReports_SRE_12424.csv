@@ -1,0 +1,31 @@
+Strategy report
+Symbol: SRE
+Work Time: 3/30/01 - 2/26/20
+
+
+Id;Strategy;Side;Amount;Price;Date/Time;Trade P/L;P/L;Position;
+1;keepbusy_cross(Buy);Buy to Open;86.0;$11.60;3/30/01;;$3.87;86.0;
+2;keepbusy_cross(SELL);Sell to Close;-86.0;$11.05;4/9/01;($46.90);($46.90);0.0;
+3;keepbusy_cross(Buy);Buy to Open;81.0;$12.20;3/21/03;;($21.79);81.0;
+4;keepbusy_cross(SELL);Sell to Close;-81.0;$12.27;5/5/03;$5.37;($41.53);0.0;
+5;keepbusy_cross(Buy);Buy to Open;52.0;$19.02;2/4/05;;($18.65);52.0;
+6;keepbusy_cross(SELL);Sell to Close;-52.0;$19.28;3/24/05;$13.56;($27.97);0.0;
+7;keepbusy_cross(Buy);Buy to Open;42.0;$23.50;1/9/06;;($37.21);42.0;
+8;keepbusy_cross(SELL);Sell to Close;-42.0;$23.40;3/6/06;($4.06);($32.03);0.0;
+9;keepbusy_cross(Buy);Buy to Open;42.0;$23.35;7/21/06;;($25.31);42.0;
+10;keepbusy_cross(SELL);Sell to Close;-42.0;$30.96;5/11/07;$319.66;$287.63;0.0;
+11;keepbusy_cross(Buy);Buy to Open;40.0;$24.63;7/12/10;;$288.63;40.0;
+12;keepbusy_cross(SELL);Sell to Close;-40.0;$24.33;7/19/10;($12.07);$275.56;0.0;
+13;keepbusy_cross(Buy);Buy to Open;37.0;$26.75;4/1/11;;$281.30;37.0;
+14;keepbusy_cross(SELL);Sell to Close;-37.0;$26.44;4/12/11;($11.44);$264.13;0.0;
+15;keepbusy_cross(Buy);Buy to Open;17.0;$57.43;12/29/14;;$272.54;17.0;
+16;keepbusy_cross(SELL);Sell to Close;-17.0;$54.65;1/7/15;($47.34);$216.78;0.0;
+17;keepbusy_cross(Buy);Buy to Open;12.0;$77.59;1/17/20;;$228.90;12.0;
+18;keepbusy_cross(SELL);Sell to Close;-12.0;$75.14;2/26/20;($29.46);$187.33;0.0;
+
+
+Max trade P/L: $319.66;
+
+Total P/L: $187.33;
+
+Total order(s): 9;
