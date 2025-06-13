@@ -1,4 +1,4 @@
-def Summary(count_win:int, count_loss:int, win_percentage:float, win_loss_ratio:float) -> str:
+def Summary(count_win:int, count_loss:int, win_percentage:float, win_loss_ratio:float, max_drawdown_pct: float) -> str:
     """
     Analyzes trading strategy profitability based on win percentage and win/loss ratio.
     
@@ -75,6 +75,7 @@ def Summary(count_win:int, count_loss:int, win_percentage:float, win_loss_ratio:
     summary += f"• Win/Loss Ratio: {win_loss_ratio}:1\n"
     summary += f"• Expected Value: {'+$' if expected_value > 0 else '%'}{expected_value :.2f} profit for every $1 risked\n"
     summary += f"• Break-even Ratio Needed: {break_even_ratio:.2f}:1\n"
+    summary += f"• Max Drawdown Percentage: {int(max_drawdown_pct)}%\n"
     
     # Insight
     summary += f"\n💡 KEY INSIGHTS:\n"

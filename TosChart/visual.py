@@ -77,6 +77,15 @@ def data(cleaned_data_path):
 
     # Calculate cumulative P/L
     df['Trade Sum'] = df['Trade P/L'].cumsum()
+    
+    ######
+    #max drawdown calculation
+    df['Running Max'] = df['Trade Sum'].cummax()
+    df['Drawdown'] = df['Trade Sum'] - df['Running Max']
+    max_drawdown = df['Drawdown'].min()  # Most negative value
+    max_drawdown_pct = (max_drawdown / df['Running Max'].max()) * 100 if df['Running Max'].max() != 0 else 0
+    ######
+
 
     # Plot and save the line graph
     plt.figure(figsize=(12, 8))
@@ -157,8 +166,8 @@ def data(cleaned_data_path):
     for name,value in desc_dict.items():
         if'%' not in name:
             description.append(name+' '+str(value))
-
-    summary=Summary(count_win, count_loss, win_loss_percentage, amount_ratio)
+            
+    summary=Summary(count_win, count_loss, win_loss_percentage, amount_ratio, max_drawdown_pct)
 
     return summary
 
