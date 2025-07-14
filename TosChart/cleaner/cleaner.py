@@ -1,4 +1,3 @@
-
 def wash(uncleaned_data_path, cleaned_data_path):
     import os
     

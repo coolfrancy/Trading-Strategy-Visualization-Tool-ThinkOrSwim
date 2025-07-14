@@ -20,10 +20,10 @@ SESSION_TIMEOUT_MINUTES = 30  # 30 minutes timeout
 app.permanent_session_lifetime = timedelta(minutes=SESSION_TIMEOUT_MINUTES)
 
 #where the cleaned and uncleaned data is being stored
-
 uncleaned_data_path = os.path.join(os.getcwd(), 'TosChart', 'uncleaned_data')
 cleaned_data_path = os.path.join(os.getcwd(), 'TosChart', 'cleaned_data')
-
+uncleaned_phases_data_path = os.path.join(os.getcwd(), 'TosChart', 'phases', 'uncleaned_phases_data')
+cleaned_phases_data_path = os.path.join(os.getcwd(), 'TosChart', 'phases', 'cleaned_phases_data')
 
 #home page allows you to add files
 @app.route('/')
@@ -31,6 +31,8 @@ def home():
     #deletes data from folder so prev data dont effect new chart
     clean_folder(uncleaned_data_path)
     clean_folder(cleaned_data_path)
+    clean_folder(uncleaned_phases_data_path)
+    clean_folder(cleaned_phases_data_path)
     session.clear()
 
     return render_template('home.html')
@@ -41,15 +43,19 @@ def clean_files():
     #deletes data from folder so prev data dont effect new chart
     clean_folder(uncleaned_data_path)
     clean_folder(cleaned_data_path)
+    clean_folder(uncleaned_phases_data_path)
+    clean_folder(cleaned_phases_data_path)
 
+    phases_multi_file=''
+    if 'pfile' in request.files:
+        phases_multi_file=request.files.getlist('pfile') #shows all the files in the phases folder
 
     #to make sure the user imported a file
     if 'cfile' not in request.files:
         return 'No file was given', 404
 
-    
-    #shows all the files currently in folder
-    multi_file=request.files.getlist('cfile')
+    multi_file=request.files.getlist('cfile') #shows all the files currently in folder
+
     if not multi_file or all(file.filename == '' for file in multi_file):
         return 'No valid files uploaded', 400
 
@@ -66,12 +72,28 @@ def clean_files():
         file_path=os.path.join(uncleaned_data_path, file_name)
         file.save(file_path)
 
+    if phases_multi_file:
+        for file in phases_multi_file:
+                if file.filename=='' or 'desktop.ini' in file.filename:
+                    continue #skips invalid files
+
+                #adds file to uncleaned_data folder
+                os.makedirs(uncleaned_phases_data_path, exist_ok=True)
+                # Create the cleaned data directory if it doesn't exist
+                os.makedirs(cleaned_phases_data_path, exist_ok=True)
+
+                file_name=os.path.basename(file.filename)
+                file_path=os.path.join(uncleaned_phases_data_path, file_name)
+                file.save(file_path)
+
     #clean files
     wash(uncleaned_data_path, cleaned_data_path)
-
+    
+    if phases_multi_file:
+        wash(uncleaned_phases_data_path, cleaned_phases_data_path)
     #summary of files
     try:
-        summary=data(cleaned_data_path)
+        summary=data(cleaned_data_path, phases_path)
         session['summary'] = summary
     except ValueError as e:
         return f'No ThinkOrSwim csv file found : {e}'
