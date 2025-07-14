@@ -70,15 +70,26 @@
         </div>
     </form>
         
-        <div class="text-center">
-            <video width="500" height="400" class="mx-auto rounded-lg shadow-lg mb-4" controls>
-                <source src="static/tutorial.mov" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <div class="text-center">
+        <video width="500" height="400" class="mx-auto rounded-lg shadow-lg mb-4" controls poster="static/videoframe_4942.png">
+            <source src="static/tutorial.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="space-y-2">
             <h2 class="text-lg font-medium text-gray-600">
                 How to Use Tutorial ↑
             </h2>
+            <p class="text-sm text-gray-500">
+                Showcased by 
+                <a href="https://www.youtube.com/@TreydingStocks" 
+                target="_blank" 
+                class="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">
+                    TreydingStocks
+                </a>
+            </p>
         </div>
+    </div>
+
     </div>
 </body>
 {% endblock %}
