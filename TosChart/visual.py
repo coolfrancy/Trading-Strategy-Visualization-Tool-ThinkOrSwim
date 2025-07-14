@@ -1,4 +1,4 @@
-def data(cleaned_data_path):
+def data(cleaned_data_path, phases_path=''):
     import pandas as pd
     import os
     import matplotlib.pyplot as plt
@@ -18,62 +18,129 @@ def data(cleaned_data_path):
 
     #this will give you a list of stocks from the folder
     stocks=os.listdir(cleaned_data_path)
+    #include phases only if user wants to add
+    if phases_path!='':
+        phases=os.listdir(phases_path)
 
-    lists=[]
-    ####
-    ##cleans all the strategy file so they match the same format
-    ###
-    for stock in stocks:
-        try:
-            dt=pd.read_csv(cleaned_data_path+'/'+stock)
-            dt.drop(columns=['Price','Amount','Position','P/L', 'Unnamed: 9','Side'], inplace=True)
+    def create_dataframe(stocks, data_path):
+        lists=[]
+        ####
+        ##cleans all the strategy file so they match the same format
+        ###
+        for stock in stocks:
+            try:
+                dt=pd.read_csv(data_path+'/'+stock)
+                dt.drop(columns=['Price','Amount','Position','P/L', 'Unnamed: 9','Side'], inplace=True)
 
-            symb=dt.columns[0]
-            date=dt.columns[2]
+                symb=dt.columns[0]
+                date=dt.columns[2]
 
-            ####
-            for ind,num in enumerate(dt[date]):
-                if ind%2!=0:
-                    if ind>0:
-                        dt.loc[ind-1, date]+='-'+num
+                ####
+                for ind,num in enumerate(dt[date]):
+                    if ind%2!=0:
+                        if ind>0:
+                            dt.loc[ind-1, date]+='-'+num
 
-                #trying somethin
+                    #trying somethin
 
-            dt['Trade P/L']=dt['Trade P/L'].shift(periods=-1)
+                dt['Trade P/L']=dt['Trade P/L'].shift(periods=-1)
 
-            for i,id in enumerate(dt[symb]):
-                if int(id)%2==0:
-                    dt.drop(i, inplace=True)
+                for i,id in enumerate(dt[symb]):
+                    if int(id)%2==0:
+                        dt.drop(i, inplace=True)
 
-            dt.dropna(inplace=True)
-            hold=[]
+                dt.dropna(inplace=True)
+                hold=[]
 
-            #creating holding period because i want to know how long i held the stock
-            for index,date in enumerate(dt[date]):
-                open, close=date.split('-')
-                hold.append(pd.to_datetime(close)-pd.to_datetime(open))
-            dt['Holding Time']=hold
+                #creating holding period because i want to know how long i held the stock
+                for index,date in enumerate(dt[date]):
+                    open, close=date.split('-')
+                    hold.append(pd.to_datetime(close)-pd.to_datetime(open))
+                dt['Holding Time']=hold
 
-            g=dt.columns[0].split()
-            dt['Id']=g[1]
-            dt.drop(columns=symb, inplace=True)
-            lists.append(dt)
-        except Exception as e:
-            print(e)
-            continue
+                g=dt.columns[0].split()
+                dt['Id']=g[1]
+                dt.drop(columns=symb, inplace=True)
+                lists.append(dt)
+            except Exception as e:
+                print(e)
+                continue
+                
+        df=pd.concat(lists)
+        df['Trade P/L'] = df['Trade P/L'].str.replace(r'[\$,]', '', regex=True).replace(r'\((\d+(\.\d+)?)\)', r'-\1', regex=True)
+        df['Trade P/L']=pd.to_numeric(df['Trade P/L'])
 
-    df=pd.concat(lists)
-    df['Trade P/L'] = df['Trade P/L'].str.replace(r'[\$,]', '', regex=True).replace(r'\((\d+(\.\d+)?)\)', r'-\1', regex=True)
-    df['Trade P/L']=pd.to_numeric(df['Trade P/L'])
+        sell=[]
 
-    sell=[]
-    for num in df['Date/Time']:
-        b, s=num.split('-')
-        sell.append(s)
-    df['Date']=sell
+        for num in df['Date/Time']:
+            b, s=num.split('-')
+            sell.append(s)
+        df['Date']=sell
 
-    # Ensure 'Date' is in datetime format and sort by date
-    df = df.assign(Date=pd.to_datetime(df['Date'])).sort_values('Date')
+        # Ensure 'Date' is in datetime format and sort by date
+        df = df.assign(Date=pd.to_datetime(df['Date'])).sort_values('Date')                
+
+        return df
+
+    def filter_trades_by_phases(main_df, phase_df):
+        """
+        Filter main trading data to only include trades that occurred during phase periods
+        """
+        if phase_df is None or phase_df.empty:
+            return main_df
+        
+        # Extract phase periods from phase dataframe
+        phase_periods = []
+        for _, row in phase_df.iterrows():
+            phase_start, phase_end = row['Date/Time'].split('-')
+            phase_periods.append((pd.to_datetime(phase_start), pd.to_datetime(phase_end)))
+        
+        # Filter main dataframe trades that fall within any phase period
+        filtered_trades = []
+        
+        for _, trade in main_df.iterrows():
+            trade_start, trade_end = trade['Date/Time'].split('-')
+            trade_start_date = pd.to_datetime(trade_start)
+            trade_end_date = pd.to_datetime(trade_end)
+            
+            # Check if trade overlaps with any phase period
+            for phase_start, phase_end in phase_periods:
+                # Trade overlaps if it starts before phase ends and ends after phase starts
+                if trade_start_date <= phase_end and trade_end_date >= phase_start:
+                    filtered_trades.append(trade)
+                    break  # Found overlap, no need to check other phases
+        
+        if filtered_trades:
+            filtered_df = pd.DataFrame(filtered_trades).reset_index(drop=True)
+            # Recalculate the Date column for the filtered data
+            sell_dates = []
+            for num in filtered_df['Date/Time']:
+                b, s = num.split('-')
+                sell_dates.append(s)
+            filtered_df['Date'] = pd.to_datetime(sell_dates)
+            filtered_df = filtered_df.sort_values('Date')
+            return filtered_df
+        else:
+            # Return empty dataframe with same structure if no trades found
+            return main_df.iloc[0:0].copy()
+
+    # Create main dataframe
+    df = create_dataframe(stocks, cleaned_data_path)
+
+    # Create phase dataframe if phases_path is provided
+    if phases_path != '':
+        p_df = create_dataframe(phases, phases_path)
+        # Filter main dataframe to only include trades during phase periods
+        df = filter_trades_by_phases(df, p_df)
+        plot_title = 'Cumulative P/L During Phase Periods with Recession Periods'
+    else:
+        p_df = None
+        plot_title = 'Cumulative Profit/Loss Over Time with Recession Periods'
+
+    # Check if we have any data after filtering
+    if df.empty:
+        print("No trades found during the specified phase periods.")
+        return None
 
     # Calculate cumulative P/L
     df['Trade Sum'] = df['Trade P/L'].cumsum()
@@ -85,7 +152,6 @@ def data(cleaned_data_path):
     max_drawdown = df['Drawdown'].min()  # Most negative value
     max_drawdown_pct = (max_drawdown / df['Running Max'].max()) * 100 if df['Running Max'].max() != 0 else 0
     ######
-
 
     # Plot and save the line graph
     plt.figure(figsize=(12, 8))
@@ -128,7 +194,7 @@ def data(cleaned_data_path):
                     bbox=dict(boxstyle="round,pad=0.3", facecolor='white', alpha=0.8, edgecolor='red'))
     
     plt.axhline(0, color='red', linestyle='--', label='Break-Even Line')
-    plt.title('Cumulative Profit/Loss Over Time with Recession Periods', fontsize=14, fontweight='bold')
+    plt.title(plot_title, fontsize=14, fontweight='bold')
     plt.xlabel('Date', fontsize=12)
     plt.ylabel('Cumulative Profit/Loss', fontsize=12)
     plt.legend(loc='upper left')
@@ -155,21 +221,22 @@ def data(cleaned_data_path):
     count_win, count_loss = len(wins), len(losses)
     sum_win, sum_loss = wins.sum(), losses.sum()
 
-    average_win=sum_win/count_win
-    average_loss=sum_loss/count_loss
-    amount_ratio=round(average_win/abs(average_loss), 2)
-    win_loss_percentage=round((count_win/(count_loss+count_win))*100, 2)
+    # Handle division by zero
+    average_win = sum_win / count_win if count_win > 0 else 0
+    average_loss = sum_loss / count_loss if count_loss > 0 else 0
+    amount_ratio = round(average_win / abs(average_loss), 2) if average_loss != 0 else 0
+    win_loss_percentage = round((count_win / (count_loss + count_win)) * 100, 2) if (count_loss + count_win) > 0 else 0
 
     #gives you information on data
-    desc_dict=df['Trade P/L'].describe().to_dict()
-    description=[]
-    for name,value in desc_dict.items():
-        if'%' not in name:
-            description.append(name+' '+str(value))
+    desc_dict = df['Trade P/L'].describe().to_dict()
+    description = []
+    for name, value in desc_dict.items():
+        if '%' not in name:
+            description.append(name + ' ' + str(value))
             
-    summary=Summary(count_win, count_loss, win_loss_percentage, amount_ratio, max_drawdown_pct)
+    summary = Summary(count_win, count_loss, win_loss_percentage, amount_ratio, max_drawdown_pct)
 
     return summary
 
-if __name__=='__main__':
+if __name__ == '__main__':
     data('/workspaces/TosChartWeb/TosChart/cleaned_data')
