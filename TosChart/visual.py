@@ -124,6 +124,7 @@ def data(cleaned_data_path, phases_path=''):
             # Return empty dataframe with same structure if no trades found
             return main_df.iloc[0:0].copy()
 
+
     # Create main dataframe
     df = create_dataframe(stocks, cleaned_data_path)
 
@@ -192,6 +193,18 @@ def data(cleaned_data_path, phases_path=''):
             plt.text(mid_date, y_pos, recession_labels[start_date], 
                     rotation=0, ha='center', va='top', fontsize=10, fontweight='bold',
                     bbox=dict(boxstyle="round,pad=0.3", facecolor='white', alpha=0.8, edgecolor='red'))
+
+    # Add phase periods as shaded areas if phases are provided
+    if phases_path != '' and p_df is not None and not p_df.empty:
+        for _, phase_row in p_df.iterrows():
+            phase_start_str, phase_end_str = phase_row['Date/Time'].split('-')
+            phase_start = pd.to_datetime(phase_start_str)
+            phase_end = pd.to_datetime(phase_end_str)
+            
+            # Only shade if the phase period overlaps with our filtered data
+            if phase_start <= df['Date'].max() and phase_end >= df['Date'].min():
+                plt.axvspan(phase_start, phase_end, alpha=0.2, color='green', 
+                          label='Phase Period' if phase_row.name == p_df.index[0] else "")
     
     plt.axhline(0, color='red', linestyle='--', label='Break-Even Line')
     plt.title(plot_title, fontsize=14, fontweight='bold')

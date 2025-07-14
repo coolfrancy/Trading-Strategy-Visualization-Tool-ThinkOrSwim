@@ -17,17 +17,58 @@
             </p>
         </div>
         
-        <form class="user_file bg-white rounded-lg shadow-md p-8 mb-12" method="POST" action="/clean_files" enctype="multipart/form-data">
+    <form class="user_file bg-white rounded-lg shadow-md p-8 mb-12" method="POST" action="/clean_files" enctype="multipart/form-data">
+        <div class="space-y-6">
+            <!-- Main Files Section -->
             <div class="text-center">
-                <h3 class="text-xl font-semibold text-gray-700 mb-4">Upload Your Backtest Files</h3>
-                <input type="file" name="cfile" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-6" webkitdirectory multiple required>
-                <p>Phases</p>
-                <input type="file" name="pfile" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-6" webkitdirectory multiple>
-                <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200 shadow-md">
-                    Analyze Data
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">Upload Your Backtest Files</h3>
+                <p class="text-sm text-gray-500 mb-4">Select your main trading data files from ThinkOrSwim</p>
+                <input 
+                    type="file" 
+                    name="cfile" 
+                    class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition-colors duration-200" 
+                    webkitdirectory 
+                    multiple 
+                    required
+                >
+            </div>
+
+            <!-- Divider -->
+            <div class="flex items-center">
+                <div class="flex-grow border-t border-gray-200"></div>
+                <span class="flex-shrink mx-4 text-gray-400 text-sm">Optional</span>
+                <div class="flex-grow border-t border-gray-200"></div>
+            </div>
+
+            <!-- Phase Files Section -->
+            <div class="text-center">
+                <h4 class="text-lg font-medium text-gray-700 mb-2">Phase Files</h4>
+                <p class="text-sm text-gray-500 mb-4">Upload to analyze specific time periods only</p>
+                <input 
+                    type="file" 
+                    name="pfile" 
+                    class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-gray-50 file:text-gray-600 hover:file:bg-gray-100 transition-colors duration-200" 
+                    webkitdirectory 
+                    multiple
+                >
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center pt-4">
+                <button 
+                    type="submit"
+                    class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+                >
+                    <span class="flex items-center justify-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                        Analyze Data
+                    </span>
                 </button>
             </div>
-        </form>
+        </div>
+    </form>
         
         <div class="text-center">
             <video width="500" height="400" class="mx-auto rounded-lg shadow-lg mb-4" controls>
