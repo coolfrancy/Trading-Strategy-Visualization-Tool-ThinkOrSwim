@@ -1,6 +1,6 @@
 # Trading Strategy Visualization Tool (ThinkOrSwim)
 
-A web-based visualization platform for analyzing back-tested trading strategy data from ThinkOrSwim.
+A web-based visualization platform for analyzing back-tested trading strategy data from ThinkOrSwim
 
 ## Overview
 
