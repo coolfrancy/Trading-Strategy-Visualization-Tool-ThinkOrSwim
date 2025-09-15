@@ -142,7 +142,7 @@ def chart():
 
 @app.route('/ads.txt')
 def ads_txt():
-    return send_from_directory(os.path.join(app.root_path, 'static'), 'ads.txt')
+    return send_from_directory(app.root_path, 'ads.txt')
 
 @app.errorhandler(500)
 def internal_error(error):
@@ -157,4 +157,4 @@ def not_found_error(error):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=5000)
