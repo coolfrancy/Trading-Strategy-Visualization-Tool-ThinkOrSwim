@@ -140,6 +140,9 @@ def chart():
     else:
         return 'No ThinkOrSwim csv file found: No summary available'
 
+@app.route('/ads.txt')
+def ads_txt():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'ads.txt')
 
 @app.errorhandler(500)
 def internal_error(error):
